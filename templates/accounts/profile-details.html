@@ -1,0 +1,131 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="w3-card-8 w3-grey w3-center profile-card" style="width:100%">
+
+        <div class="w3-container w3-center">
+            <h3>Profile Details</h3>
+            <img src="/media/{{ object.profile.profile_picture }}" alt="Profile picture" style="width:40%;height: 40%">
+            <h5>Name: {{ object.profile.first_name }} {{ object.profile.last_name }}</h5>
+            {% if object.profile.age %}
+                <p>Age: {{ object.profile.age }}</p>
+            {% else %}
+                <p>Age: --</p>
+            {% endif %}
+            <h2>Rating: {{ rating }}</h2>
+
+            {% if object.profile.description %}
+                <p>Description: {{ object.profile.description }}</p>
+            {% else %}
+                <p>Description: --</p>
+            {% endif %}
+
+
+            {% if request.user.pk == object.pk %}
+                <div class="w3-section">
+                    <a href="{% url 'profile edit' pk=object.pk %}" class="w3-btn w3-white">Edit Profile</a>
+                    <a href="{% url 'profile delete' pk=object.pk %}" class="w3-btn w3-white">Delete Profile</a>
+                </div>
+                {% if friend_request_users %}
+                    Friend requests:
+                    {% for user in friend_request_users %}
+                        <p>{{ user.profile.first_name }} wants to be your friend!</p>
+                        <form method="post"
+                              action="{% url 'friend request accept' requester_id=user.pk receiver_id=object.pk %}">
+                            <button>Accept</button>
+                            {% csrf_token %}
+                        </form>
+                        <form method="post"
+                              action="{% url 'friend request reject' requester_id=user.pk receiver_id=object.pk %}">
+                            <button>Reject</button>
+                            {% csrf_token %}
+                        </form>
+                    {% endfor %}
+                {% endif %}
+                {% if friend_users %}
+                    <h3>Your friends:</h3>
+                    {% for user in friend_users %}
+                        <p>{{ user.profile.first_name }}</p>
+                    {% endfor %}
+                {% endif %}
+                <h2>User comments:</h2>
+                {% if comments %}
+                    {% for comment in comments %}
+                        <h4>From: {{ comment.from_profile.profile.first_name }}
+                            On: {{ comment.date_of_publication }}</h4>
+                        <p>"{{ comment.content }}"</p>
+                        <form method="post"
+                              action="{% url 'delete comment' commenter_id=comment.from_profile_id commented_id=object.pk %}">
+                            <button>Delete this comment</button>
+                            {% csrf_token %}
+                        </form>
+
+                    {% endfor %}
+                {% else %}
+                    <p>There are no comments from other users.</p>
+                {% endif %}
+            {% else %}
+                {% if is_friend %}
+                    <p>You are friends.</p>
+                {% else %}
+                    {% if not has_sent_friend_request %}
+                        <div class="w3-section">
+                            <form method="post"
+                                  action="{% url 'friend request send' requester_id=request.user.pk receiver_id=object.pk %}">
+                                <button class="w3-btn w3-white">Send Friend Request</button>
+                                {% csrf_token %}
+                            </form>
+                        </div>
+                    {% else %}
+                        <p>You have sent a friend request!</p>
+                    {% endif %}
+                {% endif %}
+                {% if not has_rated %}
+                    <h2>Give rating</h2>
+                    <form method="post"
+                          action="{% url 'give rating' giver_id=request.user.pk receiver_id=object.pk %}">
+                        <div class="rating">
+
+                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                        </div>
+                        <button>Rate</button>
+                        {% csrf_token %}
+                    </form>
+                {% else %}
+                    <p>You have already rated this user!</p>
+                {% endif %}
+                {% if not has_commented %}
+                    <form method="post"
+                          action="{% url 'send comment' commenter_id=request.user.pk commented_id=object.pk %}">
+                        <p><label for="w3review">Leave a comment on this user:</label></p>
+                        <textarea id="w3review" name="w3review" rows="4" cols="50">Leave your comment here.</textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                        {% csrf_token %}
+                    </form>
+                {% else %}
+                    <h3>Your comment for this user is:</h3>
+                    <p>{{ current_comment.content }}</p>
+                {% endif %}
+                <h2>User comments:</h2>
+                {% if comments %}
+                    {% for comment in comments %}
+                        <h4>From: {{ comment.from_profile.profile.first_name }}
+                            On: {{ comment.date_of_publication }}</h4>
+                        <p>"{{ comment.content }}"</p>
+                    {% endfor %}
+                {% else %}
+                    <p>There are no comments from other users.</p>
+                {% endif %}
+
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="w3-card-8 w3-grey w3-center profile-card" style="width:100%">
+
+        <div class="w3-container w3-center">
+            <h1>Transport Details</h1>
+            <h2>{{ object.from_city }} to {{ object.to_city }}</h2>
+            <img src="/media/{{ object.driver.profile.profile_picture }}">
+            <p>Driver: <a
+                    href="{% url 'profile details' pk=object.driver.pk %}">{{ object.driver.profile.first_name }}</a>
+            </p>
+            <h4>Description:</h4>
+            <p>{{ transport.description }}</p>
+            <h4>Starting date: {{ transport.date }}</h4>
+            <h4>Time: {{ transport.time }}</h4>
+            <h4>Status: {{ transport.status }}</h4>
+            <h4>Free seats: {{ free_seats }}</h4>
+            <h4>Passengers:</h4>
+            {% if not object.passengers.all %}
+                <p>There are currently 0 passengers for this transport.</p>
+            {% else %}
+                {% if request.user.pk == object.driver.pk %}
+                    {% for passenger in object.passengers.all %}
+                        <p>-
+                            <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }}</a>
+                            ->
+                        <form method="post"
+                              action="{% url 'remove passenger' transport_id=transport.pk user_id=passenger.pk %}">
+                            <button>Remove</button>
+                            {% csrf_token %}
+                        </form>
+                        </p>
+                    {% endfor %}
+                {% else %}
+                    {% for passenger in object.passengers.all %}
+                        {% if request.user.pk == passenger.pk %}
+                            <p>-
+                                <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }}</a>
+                                ->
+                            <form method="post"
+                                  action="{% url 'remove passenger' transport_id=transport.pk user_id=passenger.pk %}">
+                                <button>Leave</button>
+                                {% csrf_token %}
+                            </form>
+                            </p>
+                        {% else %}
+                            <p>-
+                                <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }}</a>
+                            </p>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
+            {% if request.user.pk == object.driver.pk %}
+                <h4>Passenger requests:</h4>
+                {% if not object.requests.all %}
+                    <p>There are currently 0 requests.</p>
+                {% else %}
+                    {% for user in object.requests.all %}
+                        <p><a href="{% url 'profile details' pk=user.pk %}">{{ user.profile.first_name }}</a></p>
+                        <form method="post"
+                              action="{% url "accept passenger" transport_id=object.pk user_id=user.pk %}">
+                            <button>Accept</button>
+                            {% csrf_token %}
+                        </form>
+                        <form method="post"
+                              action="{% url "reject passenger" transport_id=object.pk user_id=user.pk %}">
+                            <button>Reject</button>
+                            {% csrf_token %}
+                        </form>
+                    {% endfor %}
+                {% endif %}
+                <a href="{% url 'transports edit' pk=object.pk %}">Edit Transport</a>
+                <a href="{% url 'transports delete' pk=object.pk %}">Delete Transport</a>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

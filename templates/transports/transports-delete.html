@@ -1,0 +1,12 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <h1>Do you really want to delete this transport?</h1>
+    <form method="post" action="{% url 'transports delete' pk=object.pk %}">
+        {{ form }}
+        <button>Delete</button>
+        {% csrf_token %}
+    </form>
+    <a href="{% url 'transports details' pk=object.pk %}">Cancel</a>
+
+{% endblock %}

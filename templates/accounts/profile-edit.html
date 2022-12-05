@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="w3-display-container" style="height: 700px;">
+
+        <div class="w3-display-middle">
+            <h2>Edit your profile</h2>
+            <form method="post" action="{% url 'profile edit' pk=request.user.pk %}" enctype="multipart/form-data">
+                {{ form.as_p }}
+                <button>Save</button>
+                {% csrf_token %}
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
