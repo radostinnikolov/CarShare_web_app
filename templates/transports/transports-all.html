@@ -1,59 +1,60 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-    <table class="w3-table-all w3-hoverable w3-large w3-bordered w3-centered">
-        <tr class="w3-gray">
-            <th>From:</th>
-            <th>To:</th>
-            <th>Driver:</th>
-            <th>Date:</th>
-            <th>Time:</th>
-            <th class="descr">Description:</th>
-            <th>Total seats:</th>
-            <th>Taken seats:</th>
-            <th>Passengers:</th>
-            <th>Status:</th>
-            <th></th>
-        </tr>
-        {% for transport in transport_list %}
-            <tr>
-                <td>{{ transport.from_city }}</td>
-                <td>{{ transport.to_city }}</td>
-                <td>
-                    <a href="{% url 'profile details' pk=transport.driver.pk %}">{{ transport.driver.profile.first_name }}</a>
-                </td>
-                <td>{{ transport.date }}</td>
-                <td>{{ transport.time }}</td>
-                <td class="descr">{{ transport.description }}</td>
-                <td>{{ transport.total_seats }}</td>
-                <td>{{ transport.passengers.count }}</td>
-                <td>
-                    {% for passenger in transport.passengers.all %}
-                        <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }}</a>
-                    {% endfor %}
-                </td>
-                <td>{{ transport.status }}</td>
-                {% if request.user.pk == transport.driver.pk %}
-                    <td><a href="{% url 'transports details' pk=transport.pk %}">Manage</a></td>
-                {% else %}
-                    {% if request.user in transport.passengers.all %}
-                        <td><a href="{% url 'transports details' pk=transport.pk %}">Details</a></td>
-                    {% else %}
-                        {% if request.user in transport.requests.all %}
-                            <td>You have sent a request.</td>
-                        {% else %}
-                            <td>
-                                <form method="post"
-                                      action="{% url 'send transport request' transport_id=transport.pk user_id=request.user.pk %}">
-                                    <button>Send request to join</button>
-                                    {% csrf_token %}
-                                </form>
-                            </td>
-                        {% endif %}
-                    {% endif %}
-                {% endif %}
-            </tr>
-        {% endfor %}
-    </table>
+    <main id="main"></main>
+{#    <table class="w3-table-all w3-hoverable w3-large w3-bordered w3-centered">#}
+{#        <tr class="w3-gray">#}
+{#            <th>From:</th>#}
+{#            <th>To:</th>#}
+{#            <th>Driver:</th>#}
+{#            <th>Date:</th>#}
+{#            <th>Time:</th>#}
+{#            <th class="descr">Description:</th>#}
+{#            <th>Total seats:</th>#}
+{#            <th>Taken seats:</th>#}
+{#            <th>Passengers:</th>#}
+{#            <th>Status:</th>#}
+{#            <th></th>#}
+{#        </tr>#}
+{#        {% for transport in transport_list %}#}
+{#            <tr>#}
+{#                <td>{{ transport.from_city }}</td>#}
+{#                <td>{{ transport.to_city }}</td>#}
+{#                <td>#}
+{#                    <a href="{% url 'profile details' pk=transport.driver.pk %}">{{ transport.driver.profile.first_name }}</a>#}
+{#                </td>#}
+{#                <td>{{ transport.date }}</td>#}
+{#                <td>{{ transport.time }}</td>#}
+{#                <td class="descr">{{ transport.description }}</td>#}
+{#                <td>{{ transport.total_seats }}</td>#}
+{#                <td>{{ transport.passengers.count }}</td>#}
+{#                <td>#}
+{#                    {% for passenger in transport.passengers.all %}#}
+{#                        <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }}</a>#}
+{#                    {% endfor %}#}
+{#                </td>#}
+{#                <td>{{ transport.status }}</td>#}
+{#                {% if request.user.pk == transport.driver.pk %}#}
+{#                    <td><a href="{% url 'transports details' pk=transport.pk %}">Manage</a></td>#}
+{#                {% else %}#}
+{#                    {% if request.user in transport.passengers.all %}#}
+{#                        <td><a href="{% url 'transports details' pk=transport.pk %}">Details</a></td>#}
+{#                    {% else %}#}
+{#                        {% if request.user in transport.requests.all %}#}
+{#                            <td>You have sent a request.</td>#}
+{#                        {% else %}#}
+{#                            <td>#}
+{#                                <form method="post"#}
+{#                                      action="{% url 'send transport request' transport_id=transport.pk user_id=request.user.pk %}">#}
+{#                                    <button>Send request to join</button>#}
+{#                                    {% csrf_token %}#}
+{#                                </form>#}
+{#                            </td>#}
+{#                        {% endif %}#}
+{#                    {% endif %}#}
+{#                {% endif %}#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{#    </table>#}
 
 {% endblock %}

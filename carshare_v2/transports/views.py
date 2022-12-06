@@ -70,7 +70,9 @@ def send_transport_request(request, transport_id, user_id):
     current_user = UserModel.objects.filter(pk=user_id).get()
     if request.method == 'POST':
         current_transport.requests.add(current_user)
-        return redirect('transports all')
+        return redirect(reverse_lazy('transports details', kwargs={
+            'pk': transport_id
+        }))
 
 
 def remove_passenger_from_transport(request, transport_id, user_id):

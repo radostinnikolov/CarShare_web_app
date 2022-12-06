@@ -9,6 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
+
 DEBUG = int(os.environ.get('DEBUG', 1))
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(' ')
@@ -32,6 +33,7 @@ INSTALLED_APPS = [
     'carshare_v2.friends',
     'carshare_v2.ratings',
     'carshare_v2.transports',
+    'carshare_v2.rest_api'
 
 ]
 

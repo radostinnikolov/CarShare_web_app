@@ -62,6 +62,7 @@ class Transport(models.Model):
         blank=False
     )
     time = models.TimeField(
+        default='Not set',
         null=True,
         blank=True
     )

@@ -75,6 +75,16 @@
                 {% endif %}
                 <a href="{% url 'transports edit' pk=object.pk %}">Edit Transport</a>
                 <a href="{% url 'transports delete' pk=object.pk %}">Delete Transport</a>
+            {% else %}
+                {% if request.user not in object.requests.all and request.user not in object.passengers.all %}
+                    <form method="post"
+                          action="{% url 'send transport request' transport_id=transport.pk user_id=request.user.pk %}">
+                        <button>Send request to join</button>
+                        {% csrf_token %}
+                    </form>
+                {% elif request.user in object.requests.all %}
+                    <p>You have sent a request to join.</p>
+                {% endif %}
             {% endif %}
         </div>
     </div>

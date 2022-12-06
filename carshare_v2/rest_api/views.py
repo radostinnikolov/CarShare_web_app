@@ -7,3 +7,23 @@ from carshare_v2.transports.models import Transport
 class TransportsAllAPI(generics.ListAPIView):
     queryset = Transport.objects.all()
     serializer_class = TransportSerializer
+
+    def get(self, *args, **kwargs):
+        return super().get(*args, **kwargs)
+
+    def get_queryset(self):
+        from_id = self.request.query_params.get('from')
+        to_id = self.request.query_params.get('to')
+        date = self.request.query_params.get('date')
+        queryset = self.queryset
+
+        if from_id:
+            queryset = queryset.filter(from_city_id=from_id)
+
+        if to_id:
+            queryset = queryset.filter(to_city_id=to_id)
+
+        if date:
+            queryset = queryset.filter(date__gt=date)
+
+        return queryset.all()
