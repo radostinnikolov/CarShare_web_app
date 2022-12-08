@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
@@ -15,6 +16,7 @@ UserModel = get_user_model()
 class TransportsAllListView(LoginRequiredMixin, ListView):
     model = Transport
     template_name = 'transports/transports-all.html'
+    ordering = 'date'
 
 
 
@@ -63,7 +65,6 @@ class TransportsDeleteView(DeleteView):
     success_url = reverse_lazy('transports all')
 
 
-# TODO: use signals to notify users when transport which they are in is changed or deleted
 
 def send_transport_request(request, transport_id, user_id):
     current_transport = Transport.objects.filter(pk=transport_id).get()
@@ -101,6 +102,15 @@ def reject_passenger_request(request, transport_id, user_id):
     current_user = UserModel.objects.filter(pk=user_id).get()
     if request.method == 'POST':
         current_transport.requests.remove(current_user)
+        return redirect(reverse_lazy('transports details', kwargs={
+            'pk': transport_id
+        }))
+
+def create_chatroom(request, transport_id):
+    current_transport = Transport.objects.filter(pk=transport_id).get()
+    if request.method == 'POST':
+        current_transport.chatroom_name = request.POST['chatroom_name']
+        current_transport.save()
         return redirect(reverse_lazy('transports details', kwargs={
             'pk': transport_id
         }))

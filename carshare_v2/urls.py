@@ -13,6 +13,7 @@ urlpatterns = [
     path('comment/', include('carshare_v2.comments.urls')),
     path('rate/', include('carshare_v2.ratings.urls')),
     path('api/', include('carshare_v2.rest_api.urls')),
+    path('chat/', include('carshare_v2.chat.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 #total days - 14 days

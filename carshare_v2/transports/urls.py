@@ -2,7 +2,7 @@ from django.urls import path
 
 from carshare_v2.transports.views import TransportsAllListView, TransportsCreateView, TransportsDetailView, \
     TransportsEditView, TransportsDeleteView, \
-    send_transport_request, remove_passenger_from_transport, accept_passenger_request, reject_passenger_request
+    send_transport_request, remove_passenger_from_transport, accept_passenger_request, reject_passenger_request, create_chatroom
 
 urlpatterns = (
     path('all/', TransportsAllListView.as_view(), name='transports all'),
@@ -18,4 +18,6 @@ urlpatterns = (
          name='accept passenger'),
     path('reject_transport_request/<int:transport_id>/<int:user_id>/', reject_passenger_request,
          name='reject passenger'),
+    path('create_chatroom/<int:transport_id>/', create_chatroom,
+         name='chatroom create'),
 )

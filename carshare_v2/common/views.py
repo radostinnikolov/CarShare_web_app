@@ -25,8 +25,8 @@ class IndexView(LoginRequiredMixin, generic.TemplateView):
 
     @staticmethod
     def get_current_user_transports(pk):
-        current_tranports = [x for x in Transport.objects.filter(driver_id=pk)]
-        current_tranports.extend([x for x in Transport.objects.filter(passengers=pk)])
+        current_tranports = [x for x in Transport.objects.filter(driver_id=pk).order_by('date')]
+        current_tranports.extend([x for x in Transport.objects.filter(passengers=pk).order_by('date')])
         return current_tranports
 
 
@@ -34,7 +34,7 @@ class IndexView(LoginRequiredMixin, generic.TemplateView):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
         context['friend_users'] = UserModel.objects.filter(id__in=IndexView.get_friends_ids(context['user'].pk)).all()
-        context['friends_transports'] = Transport.objects.filter(driver_id__in=IndexView.get_friends_ids(context['user'].pk)).all()
+        context['friends_transports'] = Transport.objects.filter(driver_id__in=IndexView.get_friends_ids(context['user'].pk)).all().order_by('date')
         context['my_transports'] = IndexView.get_current_user_transports(context['user'].pk)
         context['friend_requests'] = FriendRequest.objects.filter(requester_id__in=IndexView.get_requesters_ids(context['user'].pk))
         return context

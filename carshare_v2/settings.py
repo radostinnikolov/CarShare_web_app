@@ -17,6 +17,7 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(' ')
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -33,7 +34,8 @@ INSTALLED_APPS = [
     'carshare_v2.friends',
     'carshare_v2.ratings',
     'carshare_v2.transports',
-    'carshare_v2.rest_api'
+    'carshare_v2.rest_api',
+    'carshare_v2.chat',
 
 ]
 
@@ -68,6 +70,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'carshare_v2.wsgi.application'
+
+ASGI_APPLICATION = "carshare_v2.asgi.application"
 
 
 DATABASES = {
@@ -132,3 +136,12 @@ LOGIN_REDIRECT_URL = reverse_lazy('index')
 LOGOUT_REDIRECT_URL = reverse_lazy('index no login')
 
 AUTH_USER_MODEL = 'accounts.AppUser'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("127.0.0.1", 6379)],
+        },
+    },
+}

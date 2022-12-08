@@ -18,6 +18,8 @@
             <h4>Time: {{ transport.time }}</h4>
             <h4>Status: {{ transport.status }}</h4>
             <h4>Free seats: {{ free_seats }}</h4>
+
+            <!-- Passengers section start-->
             <h4>Passengers:</h4>
             {% if not object.passengers.all %}
                 <p>There are currently 0 passengers for this transport.</p>
@@ -54,6 +56,9 @@
                     {% endfor %}
                 {% endif %}
             {% endif %}
+            <!-- Passengers section end-->
+
+            <!-- Requests section start-->
             {% if request.user.pk == object.driver.pk %}
                 <h4>Passenger requests:</h4>
                 {% if not object.requests.all %}
@@ -86,6 +91,35 @@
                     <p>You have sent a request to join.</p>
                 {% endif %}
             {% endif %}
+            <!-- Requests section end-->
+
+            <!-- Chatroom section start-->
+            <h2>Chatroom:</h2>
+            {% if object.chatroom_name %}
+                {% if request.user in object.passengers.all or request.user.pk == object.driver.pk%}
+                    <p>Link to chatroom for this transport: <a
+                            href="{% url 'room' room_name=object.chatroom_name %}">{{ object.chatroom_name }}</a></p>
+                {% else %}
+                    <p>You are not part of this transport.</p>
+                {% endif %}
+            {% else %}
+                {% if request.user.pk == object.driver.pk %}
+                    <p>Create chatroom:</p>
+                    <form method="post" action="{% url 'chatroom create' transport_id=object.pk %}">
+                        <input type="text" name="chatroom_name">
+                        <button>Create</button>
+                        {% csrf_token %}
+                    </form>
+                {% else %}
+                    {% if request.user in object.passengers.all %}
+                        <p>Currently there is no chatroom for this transport!</p>
+                    {% else %}
+                        <p>You are not part of this transport.</p>
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+
+            <!-- Chatroom section end-->
         </div>
     </div>
 

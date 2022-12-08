@@ -87,3 +87,8 @@ class Transport(models.Model):
         null=False,
         blank=False
     )
+    chatroom_name = models.CharField(
+        max_length=20,
+        null=True,
+        blank=True
+    )

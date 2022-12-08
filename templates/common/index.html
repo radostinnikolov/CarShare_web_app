@@ -36,51 +36,51 @@
                 <br>
 
                 <!-- Accordion -->
-                <div class="w3-card w3-round">
-                    <div class="w3-white">
-                        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align">
-                            <i
-                                    class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Transports
-                        </button>
-                        <div id="Demo1" class="w3-hide w3-container">
-                            <p>Some text..</p>
-                        </div>
-                        {#                        <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align">#}
-                        {#                            <i#}
-                        {#                                    class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events#}
-                        {#                        </button>#}
-                        {#                        <div id="Demo2" class="w3-hide w3-container">#}
-                        {#                            <p>Some other text..</p>#}
-                        {#                        </div>#}
-                        <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align">
-                            <i
-                                    class="fa fa-users fa-fw w3-margin-right"></i> My Friends
-                        </button>
-                        <div id="Demo3" class="w3-hide w3-container">
-                            <div class="w3-row-padding">
-                                <br>
-                                <div class="w3-half">
-                                    <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
-                                </div>
-                                <div class="w3-half">
-                                    <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-                                </div>
-                                <div class="w3-half">
-                                    <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
-                                </div>
-                                <div class="w3-half">
-                                    <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
-                                </div>
-                                <div class="w3-half">
-                                    <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-                                </div>
-                                <div class="w3-half">
-                                    <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {#                <div class="w3-card w3-round">#}
+                {#                    <div class="w3-white">#}
+                {#                        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align">#}
+                {#                            <i#}
+                {#                                    class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Transports#}
+                {#                        </button>#}
+                {#                        <div id="Demo1" class="w3-hide w3-container">#}
+                {#                            <p>Some text..</p>#}
+                {#                        </div>#}
+                {#                                                <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align">#}
+                {#                                                    <i#}
+                {#                                                            class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events#}
+                {#                                                </button>#}
+                {#                                                <div id="Demo2" class="w3-hide w3-container">#}
+                {#                                                    <p>Some other text..</p>#}
+                {#                                                </div>#}
+                {#                        <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align">#}
+                {#                            <i#}
+                {#                                    class="fa fa-users fa-fw w3-margin-right"></i> My Friends#}
+                {#                        </button>#}
+                {#                        <div id="Demo3" class="w3-hide w3-container">#}
+                {#                            <div class="w3-row-padding">#}
+                {#                                <br>#}
+                {#                                <div class="w3-half">#}
+                {#                                    <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">#}
+                {#                                </div>#}
+                {#                                <div class="w3-half">#}
+                {#                                    <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">#}
+                {#                                </div>#}
+                {#                                <div class="w3-half">#}
+                {#                                    <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">#}
+                {#                                </div>#}
+                {#                                <div class="w3-half">#}
+                {#                                    <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">#}
+                {#                                </div>#}
+                {#                                <div class="w3-half">#}
+                {#                                    <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">#}
+                {#                                </div>#}
+                {#                                <div class="w3-half">#}
+                {#                                    <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {#                        </div>#}
+                {#                    </div>#}
+                {#                </div>#}
                 <br>
                 <!-- End Left Column -->
             </div>
@@ -120,7 +120,8 @@
                                 </p>
                             </div>
                         </div>
-                        <a href="{% url 'transports details' pk=transport.pk %}" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i
+                        <a href="{% url 'transports details' pk=transport.pk %}" type="button"
+                           class="w3-button w3-theme-d1 w3-margin-bottom"><i
                                 class="fa fa-thumbs-up"></i>
                             See details
                         </a>
@@ -130,54 +131,69 @@
                         </button>
                     </div>
                 {% endfor %}
-
-
                 <!-- End Middle Column -->
             </div>
 
             <!-- Right Column -->
             <div class="w3-col m2">
                 <div class="w3-card w3-round w3-white w3-center">
-                    {% for transport in my_transports %}
+                    <h2>Your transports:</h2>
+                    {% if my_transports %}
+                        {% for transport in my_transports %}
+                            <div class="w3-container">
+                                <p>Upcoming transport:</p>
+                                {#                        <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">#}
+                                <p><strong>{{ transport.from_city }} - {{ transport.to_city }}</strong></p>
+                                <p>{{ transport.date }} {{ transport.time }}</p>
+                                <p>
+                                    <a href="{% url 'transports details' pk=transport.pk %}"
+                                       class="w3-button w3-block w3-theme-l4">Details</a>
+                                </p>
+                            </div>
+                        {% endfor %}
+                    {% else %}
                         <div class="w3-container">
-                            <p>Upcoming transport:</p>
-                            {#                        <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">#}
-                            <p><strong>{{ transport.from_city }} - {{ transport.to_city }}</strong></p>
-                            <p>{{ transport.date }} {{ transport.time }}</p>
-                            <p>
-                                <a href="{% url 'transports details' pk=transport.pk %}"
-                                   class="w3-button w3-block w3-theme-l4">Details</a>
-                            </p>
+                            <p>You are not part of any transports!</p>
                         </div>
-                    {% endfor %}
+                    {% endif %}
 
                 </div>
                 <br>
 
                 <div class="w3-card w3-round w3-white w3-center">
-                    {% for request in friend_requests %}
-                        <div class="w3-container">
-                            <p>Friend Request</p>
-                            <img src="/media/{{ request.requester.profile.profile_picture }}" alt="Avatar" style="width:50%"><br>
-                            <span>{{ request.requester.profile.first_name }} {{ request.requester.profile.last_name }}</span>
-                            <div class="w3-row w3-opacity">
-                                <div class="w3-half">
-                                    <form method="post" action="{% url 'friend request accept' requester_id=request.requester_id receiver_id=user.pk %}">
-                                        <button class="w3-button w3-block w3-green w3-section" title="Accept"><i
-                                            class="fa fa-check"></i></button>
-                                        {% csrf_token %}
-                                    </form>
-                                </div>
-                                <div class="w3-half">
-                                    <form method="post" action="{% url 'friend request reject' requester_id=request.requester_id receiver_id=user.pk %}">
-                                        <button class="w3-button w3-block w3-red w3-section" title="Decline"><i
-                                            class="fa fa-remove"></i></button>
-                                        {% csrf_token %}
-                                    </form>
+                    <h2>Friend requests:</h2>
+                    {% if friend_requests %}
+                        {% for request in friend_requests %}
+                            <div class="w3-container">
+                                <p>Friend Request</p>
+                                <img src="/media/{{ request.requester.profile.profile_picture }}" alt="Avatar"
+                                     style="width:50%"><br>
+                                <span>{{ request.requester.profile.first_name }} {{ request.requester.profile.last_name }}</span>
+                                <div class="w3-row w3-opacity">
+                                    <div class="w3-half">
+                                        <form method="post"
+                                              action="{% url 'friend request accept' requester_id=request.requester_id receiver_id=user.pk %}">
+                                            <button class="w3-button w3-block w3-green w3-section" title="Accept"><i
+                                                    class="fa fa-check"></i></button>
+                                            {% csrf_token %}
+                                        </form>
+                                    </div>
+                                    <div class="w3-half">
+                                        <form method="post"
+                                              action="{% url 'friend request reject' requester_id=request.requester_id receiver_id=user.pk %}">
+                                            <button class="w3-button w3-block w3-red w3-section" title="Decline"><i
+                                                    class="fa fa-remove"></i></button>
+                                            {% csrf_token %}
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="w3-container">
+                            <p>There are no friend requests!</p>
                         </div>
-                    {% endfor %}
+                    {% endif %}
 
                 </div>
                 <br>
