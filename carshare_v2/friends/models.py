@@ -17,6 +17,8 @@ class FriendRequest(models.Model):
         related_name='receiver',
         related_query_name='receiver'
     )
+    def __str__(self):
+        return f'From user: {self.requester} - To user: {self.receiver}'
 
 
 class Friend(models.Model):
@@ -32,3 +34,5 @@ class Friend(models.Model):
         related_name='receiver_friend',
         related_query_name='receiver_friend'
     )
+    def __str__(self):
+        return f'From user: {self.requester} - To user: {self.receiver}'

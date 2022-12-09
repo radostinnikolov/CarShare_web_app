@@ -55,8 +55,8 @@ window.addEventListener("load", (event) => {
 
 
     const resultTemplate = (items) => html`
-${!items.length ? html`No transports fit your criteria!` : html`<table class="w3-table-all w3-hoverable w3-large w3-bordered w3-centered">
-<tr class="w3-gray">
+${!items.length ? html`No transports fit your criteria!` : html`<table class="w3-table-all w3-hoverable w3-large w3-bordered w3-centered w3-teal">
+<tr class="w3-teal">
     <th>From:</th>
     <th>To:</th>
     <th>Driver:</th>

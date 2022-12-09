@@ -31,3 +31,5 @@ class Rating(models.Model):
         null=False,
         blank=False
     )
+    def __str__(self):
+        return f'From user: {self.from_profile} - To user: {self.to_profile}'

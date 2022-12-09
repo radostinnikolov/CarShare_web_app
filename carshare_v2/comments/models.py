@@ -30,3 +30,5 @@ class Comment(models.Model):
     date_of_publication = models.DateField(
         auto_now_add=True
     )
+    def __str__(self):
+        return f'From user: {self.from_profile} - To user: {self.to_profile}'

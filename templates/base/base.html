@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
@@ -32,6 +32,11 @@
         <a href="{% url 'index-chat' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
            title="Chatrooms"><i
                 class="fa fa-envelope"></i> Chatrooms</a>
+        {% if request.user.is_staff or request.user.issuperuser %}
+            <a href="{% url 'admin:index' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+           title="Administration"><i
+                class="fa fa-gavel"></i> Administration</a>
+        {% endif %}
         {#        <div class="w3-dropdown-hover w3-hide-small">#}
         {#            <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span#}
         {#                    class="w3-badge w3-right w3-small w3-green">3</span></button>#}
