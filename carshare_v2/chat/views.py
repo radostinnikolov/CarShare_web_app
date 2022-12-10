@@ -1,6 +1,9 @@
 from django.contrib.auth import get_user_model
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView
+from django.shortcuts import get_object_or_404
 
 from carshare_v2.transports.models import Transport
 
@@ -21,7 +24,7 @@ def get_all_logged_in_users():
     return UserModel.objects.filter(id__in=uid_list)
 
 
-class IndexChatTemplateView(TemplateView):
+class IndexChatTemplateView(LoginRequiredMixin, TemplateView):
     template_name = "chat/index-chat.html"
 
     def get_context_data(self, **kwargs):
@@ -29,9 +32,9 @@ class IndexChatTemplateView(TemplateView):
         context['user'] = self.request.user
         return context
 
-
+@login_required
 def room(request, room_name):
-    current_transport = Transport.objects.filter(chatroom_name=room_name).get()
+    current_transport = get_object_or_404(Transport, chatroom_name=room_name)
     current_users = get_all_logged_in_users()
 
 

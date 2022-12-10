@@ -92,3 +92,4 @@ class Transport(models.Model):
         null=True,
         blank=True
     )
+

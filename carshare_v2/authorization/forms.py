@@ -17,14 +17,15 @@ class SignUpForm(auth_forms.UserCreationForm):
     class Meta:
         model = UserModel
         fields = (
-            UserModel.USERNAME_FIELD, 'password1', 'password2', 'first_name', 'last_name')
+            'email', 'password1', 'password2', 'first_name', 'last_name')
+
         # 'age', 'profile_picture', 'description'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        for fieldname in ['password1', 'password2']:
-            self.fields[fieldname].help_text = None
+        # for fieldname in ['password1', 'password2']:
+        #     self.fields[fieldname].help_text = None
 
     def save(self, commit=True):
         user = super().save(commit=commit)

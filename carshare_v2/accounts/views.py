@@ -6,7 +6,7 @@ from django.views import generic
 from carshare_v2.accounts.models import Profile
 from carshare_v2.comments.models import Comment
 from carshare_v2.common.views import IndexView
-from carshare_v2.friends.models import FriendRequest, Friend
+
 from carshare_v2.ratings.models import Rating
 
 UserModel = get_user_model()

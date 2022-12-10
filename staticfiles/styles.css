@@ -21,13 +21,21 @@ html, body, h1, h2, h3, h4, h5 {
     font-family: "Open Sans", sans-serif
 }
 
+p {
+    display: block;
+    text-align: center;
+}
 label {
     display: block;
 }
-p {
-    word-break: break-all;
-    white-space: normal;
+li {
+    text-align: center;
 }
+.helptext{
+    display: block;
+}
+
+
 
 .rating {
 display: flex;
@@ -63,6 +71,14 @@ opacity:1;
 
 .rating:hover > input:checked ~ label:before{ opacity: 0.4; }
 
+.bg {
+  /* Full height */
+  height: 100%;
 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 

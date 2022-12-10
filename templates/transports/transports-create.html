@@ -1,11 +1,17 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-    <h1>Create Transport</h1>
-    <form method="post" action="{% url 'transports create' %}">
-        {{ form.as_p }}
-        <button>Create</button>
-        {% csrf_token %}
-    </form>
+    <div class="w3-display-center w3-container w3-card-4 w3-light-grey w3-text-gray w3-margin">
+        <div class="w3-row w3-section w3-center">
+            <h1>Create Transport</h1>
+        </div>
+        <form method="post" action="{% url 'transports create' %}">
+            {{ form.as_p }}
+            <div class="w3-row w3-section w3-center">
+                <button class="w3-btn w3-teal">Create</button>
+            </div>
+            {% csrf_token %}
+        </form>
+    </div>
 
 {% endblock %}

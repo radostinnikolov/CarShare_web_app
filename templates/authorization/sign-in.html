@@ -3,38 +3,16 @@
 
 {% block content %}
 
-    <div style="height: 700px;">
-
-        <div class="w3-display-middle w3-container w3-card-4 w3-light-grey w3-text-gray w3-margin">
-            <form method="post" action="{% url 'sign in' %}">
-                <h2 class="w3-center">Login</h2>
-
+            <div class="w3-display-center w3-container w3-card-4 w3-light-grey w3-text-gray w3-margin">
                 <div class="w3-row w3-section w3-center">
-                    <div class="w3-col" style="width:50px">E-mail:
-                        <div class="w3-rest" style="display: inline">
-                            {{ form.username }}
-                        </div>
-                    </div>
-
+                    <h2>Login</h2>
                 </div>
-
-                <div class="w3-row w3-section w3-center">
-                    <div class="w3-col" style="width:50px">Password:
-                        <div class="w3-rest" style="display: inline">
-                            {{ form.password }}
-
-                        </div>
+                <form method="post" action="{% url 'sign in' %}">
+                    {{ form.as_p }}
+                    <div class="w3-row w3-section w3-center">
+                        <button class="w3-btn w3-teal">Login</button>
                     </div>
-
-                </div>
-                {% csrf_token %}
-                <button class="w3-button w3-block w3-section w3-gray w3-ripple w3-padding w3-center" style="width:auto">
-                    Submit
-                </button>
-            </form>
-            <p>If you don't have a profile yet - register here: <a href="{% url 'sign up' %}"> Register</a></p>
-        </div>
-
-    </div>
-
+                    {% csrf_token %}
+                </form>
+            </div>
 {% endblock %}

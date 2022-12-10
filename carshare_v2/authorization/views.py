@@ -1,5 +1,6 @@
 from django.contrib.auth import views as auth_views, login, get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.shortcuts import render
 
 from django.urls import reverse_lazy
 from django.views import generic
@@ -23,8 +24,12 @@ class SignUpView(generic.CreateView):
         return result
 
 
+
 class SignInView(auth_views.LoginView):
     template_name = 'authorization/sign-in.html'
+
+
+
 
 
 class SignOutView(auth_views.LogoutView):

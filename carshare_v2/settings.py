@@ -10,7 +10,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
-DEBUG = int(os.environ.get('DEBUG', 1))
+DEBUG = bool(int(os.environ.get('DEBUG', 1)))
+print
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(' ')
 

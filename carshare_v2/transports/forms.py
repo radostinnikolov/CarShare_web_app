@@ -10,7 +10,7 @@ class CreateTransportForm(forms.ModelForm):
         widgets = {
             'description': forms.Textarea(),
             'date': forms.SelectDateWidget(),
-            'time': forms.DateTimeInput()
+            'time': forms.TimeInput()
         }
 
 
@@ -21,7 +21,7 @@ class EditTransportForm(forms.ModelForm):
         widgets = {
             'description': forms.Textarea(),
             'date': forms.SelectDateWidget(),
-            'time': forms.DateTimeInput()
+            'time': forms.TimeInput()
         }
 
 

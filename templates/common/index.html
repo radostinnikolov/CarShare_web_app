@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px;">
         <!-- The Grid -->
         <div class="w3-row">
             <!-- Left Column -->
@@ -99,38 +99,35 @@
                 </div>
                 {% for transport in friends_transports %}
                     <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-                        <img src="/media/{{ transport.driver.profile.profile_picture }}" alt="Avatar"
-                             class="w3-left w3-circle w3-margin-right"
-                             style="width:60px">
-                        <span class="w3-right w3-opacity">Date of transport: {{ transport.date }}</span>
-                        <h4>{{ transport.driver.profile.first_name }} {{ transport.driver.profile.last_name }}</h4><br>
-                        <hr class="w3-clear">
-                        <p>From: {{ transport.from_city }}</p>
-                        <p>To: {{ transport.to_city }}</p>
-                        <p>Description: {{ transport.description }}</p>
-                        <div class="w3-row-padding" style="margin:0 -16px">
-                            <div class="w3-half">
-                                <p>Total seats: {{ transport.total_seats }}</p>
+                        <div class="entry event col-12">
+                    <div class="grid-inner row g-0 p-4">
+                        <div class="col-md-5 mb-md-0">
+                            <img src="/media/{{ transport.driver.profile.profile_picture }}" alt="Avatar"
+                                 class="w3-left w3-circle w3-margin-right"
+                                 style="width:100%; height: auto;">
+
+                        </div>
+                        <div class="col-md-7 ps-md-4">
+                            <div class="entry-title title-sm">
+                                <h2><a href="{% url 'profile details' pk=transport.driver.pk %}">{{ transport.driver.profile.first_name}} {{ transport.driver.profile.last_name}}</a></h2>
                             </div>
-                            <div class="w3-half">
-                                <p>Passengers:
-                                    {% for passenger in transport.passengers.all %}
-                                        <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }}</a>
-                                    {% endfor %}
-                                </p>
+                            <div class="entry-meta">
+                                <ul>
+                                    <li><span class="badge bg-warning text-dark py-1 px-2">{{ transport.status }}</span></li>
+                                    <li><i class="icon-time"></i> {{ transport.time }} {{ transport.date }}</li>
+                                    <li><i class="icon-map-marker2"></i> {{ transport.from_city }} - {{ transport.to_city }}</li>
+                                </ul>
+                            </div>
+                            <div class="entry-content">
+                                <h5>{{ transport.description }}.</h5>
+                                <a href="{% url 'transports details' pk=transport.pk %}" class="w3-btn w3-teal">See details</a>
                             </div>
                         </div>
-                        <a href="{% url 'transports details' pk=transport.pk %}" type="button"
-                           class="w3-button w3-theme-d1 w3-margin-bottom"><i
-                                class="fa fa-thumbs-up"></i>
-                            See details
-                        </a>
-                        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i
-                                class="fa fa-comment"></i>
-                            Message driver
-                        </button>
+                    </div>
+                </div>
                     </div>
                 {% endfor %}
+
                 <!-- End Middle Column -->
             </div>
 

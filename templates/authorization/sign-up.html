@@ -1,18 +1,16 @@
 {% extends 'base/base.html' %}
-{% load static %}
 
 {% block content %}
-
-    <div class="w3-display-container" style="height: 700px;">
-
-        <div class="w3-display-middle">
-            <h2>Register</h2>
-            <form method="post" action="{% url 'sign up' %}">
-                {{ form.as_p }}
-                <button>Register</button>
-                {% csrf_token %}
-            </form>
+    <div class="w3-display-center w3-container w3-card-4 w3-light-grey w3-text-gray w3-margin">
+        <div class="w3-row w3-section w3-center">
+            <h1>Register</h1>
         </div>
+        <form method="post" action="{% url 'sign up' %}">
+            {{ form.as_p }}
+            <div class="w3-row w3-section w3-center">
+                <button class="w3-btn w3-teal">Register</button>
+            </div>
+            {% csrf_token %}
+        </form>
     </div>
-
 {% endblock %}
