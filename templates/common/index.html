@@ -34,54 +34,6 @@
                     </div>
                 </div>
                 <br>
-
-                <!-- Accordion -->
-                {#                <div class="w3-card w3-round">#}
-                {#                    <div class="w3-white">#}
-                {#                        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align">#}
-                {#                            <i#}
-                {#                                    class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Transports#}
-                {#                        </button>#}
-                {#                        <div id="Demo1" class="w3-hide w3-container">#}
-                {#                            <p>Some text..</p>#}
-                {#                        </div>#}
-                {#                                                <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align">#}
-                {#                                                    <i#}
-                {#                                                            class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events#}
-                {#                                                </button>#}
-                {#                                                <div id="Demo2" class="w3-hide w3-container">#}
-                {#                                                    <p>Some other text..</p>#}
-                {#                                                </div>#}
-                {#                        <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align">#}
-                {#                            <i#}
-                {#                                    class="fa fa-users fa-fw w3-margin-right"></i> My Friends#}
-                {#                        </button>#}
-                {#                        <div id="Demo3" class="w3-hide w3-container">#}
-                {#                            <div class="w3-row-padding">#}
-                {#                                <br>#}
-                {#                                <div class="w3-half">#}
-                {#                                    <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">#}
-                {#                                </div>#}
-                {#                                <div class="w3-half">#}
-                {#                                    <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">#}
-                {#                                </div>#}
-                {#                                <div class="w3-half">#}
-                {#                                    <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">#}
-                {#                                </div>#}
-                {#                                <div class="w3-half">#}
-                {#                                    <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">#}
-                {#                                </div>#}
-                {#                                <div class="w3-half">#}
-                {#                                    <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">#}
-                {#                                </div>#}
-                {#                                <div class="w3-half">#}
-                {#                                    <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">#}
-                {#                                </div>#}
-                {#                            </div>#}
-                {#                        </div>#}
-                {#                    </div>#}
-                {#                </div>#}
-                <br>
                 <!-- End Left Column -->
             </div>
 
@@ -92,7 +44,7 @@
                     <div class="w3-col m12">
                         <div class="w3-card w3-round w3-white">
                             <div class="w3-container w3-padding">
-                                <h2>Transports of your friends:</h2>
+                                <h2 style="text-align: center">Transports of your friends:</h2>
                             </div>
                         </div>
                     </div>
@@ -100,31 +52,37 @@
                 {% for transport in friends_transports %}
                     <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
                         <div class="entry event col-12">
-                    <div class="grid-inner row g-0 p-4">
-                        <div class="col-md-5 mb-md-0">
-                            <img src="/media/{{ transport.driver.profile.profile_picture }}" alt="Avatar"
-                                 class="w3-left w3-circle w3-margin-right"
-                                 style="width:100%; height: auto;">
+                            <div class="grid-inner row g-0 p-4" style="border-style: solid; border-color: teal">
+                                <div class="col-md-5 mb-md-0">
+                                    <img src="/media/{{ transport.driver.profile.profile_picture }}" alt="Avatar"
+                                         class="w3-left w3-circle w3-margin-right"
+                                         style="width:100%; height: auto;">
 
+                                </div>
+                                <div class="col-md-7 ps-md-4">
+                                    <div class="entry-title title-sm">
+                                        <h2>
+                                            <a href="{% url 'profile details' pk=transport.driver.pk %}">{{ transport.driver.profile.first_name }} {{ transport.driver.profile.last_name }}</a>
+                                        </h2>
+                                    </div>
+                                    <div class="entry-meta">
+                                        <ul>
+                                            <li><span
+                                                    class="badge bg-warning text-dark py-1 px-2">{{ transport.status }}</span>
+                                            </li>
+                                            <li><i class="icon-time"></i> {{ transport.time }} {{ transport.date }}</li>
+                                            <li><i class="icon-map-marker2"></i> {{ transport.from_city }}
+                                                - {{ transport.to_city }}</li>
+                                        </ul>
+                                    </div>
+                                    <div class="entry-content">
+                                        <h5>{{ transport.description }}.</h5>
+                                        <a href="{% url 'transports details' pk=transport.pk %}" class="w3-btn w3-teal">See
+                                            details</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-7 ps-md-4">
-                            <div class="entry-title title-sm">
-                                <h2><a href="{% url 'profile details' pk=transport.driver.pk %}">{{ transport.driver.profile.first_name}} {{ transport.driver.profile.last_name}}</a></h2>
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><span class="badge bg-warning text-dark py-1 px-2">{{ transport.status }}</span></li>
-                                    <li><i class="icon-time"></i> {{ transport.time }} {{ transport.date }}</li>
-                                    <li><i class="icon-map-marker2"></i> {{ transport.from_city }} - {{ transport.to_city }}</li>
-                                </ul>
-                            </div>
-                            <div class="entry-content">
-                                <h5>{{ transport.description }}.</h5>
-                                <a href="{% url 'transports details' pk=transport.pk %}" class="w3-btn w3-teal">See details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                     </div>
                 {% endfor %}
 
@@ -133,20 +91,21 @@
 
             <!-- Right Column -->
             <div class="w3-col m2">
-                <div class="w3-card w3-round w3-white w3-center">
+                <div class="w3-card w3-round w3-white w3-center" style="padding: 20px">
                     <h2>Your transports:</h2>
                     {% if my_transports %}
                         {% for transport in my_transports %}
-                            <div class="w3-container">
-                                <p>Upcoming transport:</p>
-                                {#                        <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">#}
-                                <p><strong>{{ transport.from_city }} - {{ transport.to_city }}</strong></p>
-                                <p>{{ transport.date }} {{ transport.time }}</p>
-                                <p>
-                                    <a href="{% url 'transports details' pk=transport.pk %}"
-                                       class="w3-button w3-block w3-theme-l4">Details</a>
-                                </p>
-                            </div>
+                            {% if transport.status == 'ACTIVE' %}
+                                <div class="w3-container" style="margin: 20px; border-style: solid; border-color: teal">
+                                    <p>Upcoming transport:</p>
+                                    <p><strong>{{ transport.from_city }} - {{ transport.to_city }}</strong></p>
+                                    <p>{{ transport.date }} {{ transport.time }}</p>
+                                    <p>
+                                        <a href="{% url 'transports details' pk=transport.pk %}"
+                                           class="w3-button w3-block w3-theme-l4">Details</a>
+                                    </p>
+                                </div>
+                            {% endif %}
                         {% endfor %}
                     {% else %}
                         <div class="w3-container">
@@ -157,11 +116,11 @@
                 </div>
                 <br>
 
-                <div class="w3-card w3-round w3-white w3-center">
+                <div class="w3-card w3-round w3-white w3-center" style="padding: 20px">
                     <h2>Friend requests:</h2>
                     {% if friend_requests %}
                         {% for request in friend_requests %}
-                            <div class="w3-container">
+                            <div class="w3-container" style="margin: 20px; border-style: solid; border-color: teal">
                                 <p>Friend Request</p>
                                 <img src="/media/{{ request.requester.profile.profile_picture }}" alt="Avatar"
                                      style="width:50%"><br>

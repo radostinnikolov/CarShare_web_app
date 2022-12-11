@@ -2,17 +2,24 @@
 
 {% block content %}
     <body>
-    <textarea id="chat-log" cols="100" rows="20" disabled></textarea><br>
-    <input id="chat-user-input" type="text" size="100" value="{{ user.profile.first_name }}:" readonly>
-    <input id="chat-message-input" type="text" size="100">
-    <br>
-    <input id="chat-message-submit" type="button" value="Send">
-    {{ room_name|json_script:"room-name" }}
+    <div class="w3-display-center w3-container w3-card-4 w3-light-grey w3-text-gray w3-margin">
+        <div class="card bottommargin-sm" style="margin-top: 50px; display: block">
+            <div class="card-body">
+            <h1 style="text-align: center">{{ room_name }}</h1>
+                <p><textarea id="chat-log" cols="100" rows="20" disabled></textarea></p><br>
+                <p><input id="chat-user-input" type="text" size="100" value="{{ user.profile.first_name }}:" readonly></p>
+                <p>Write your message here:</p>
+                <p><input id="chat-message-input" type="text" size="100"></p>
+                <p><a id="chat-message-submit" type="button" class="w3-btn w3-teal">Send</a></p>
+                {{ room_name|json_script:"room-name" }}
 
-    <h2>Online:</h2>
-    {% for user in online %}
-        <p>{{ user.profile.first_name }}</p>
-    {% endfor %}
+                <h2 style="text-align: center">Online:</h2>
+                {% for user in online %}
+                    <p>{{ user.profile.first_name }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
     <script>
 
         const roomName = JSON.parse(document.getElementById('room-name').textContent);

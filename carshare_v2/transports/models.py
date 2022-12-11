@@ -1,8 +1,11 @@
+from datetime import datetime, date
 from enum import Enum
 
 from django.contrib.auth import get_user_model
+from django.core.exceptions import ValidationError
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
+
 
 from carshare_v2.common.models import City
 
@@ -58,13 +61,16 @@ class Transport(models.Model):
         blank=True
     )
     date = models.DateField(
+        validators=(),
         null=False,
         blank=False
+        #TODO: add date validator
     )
     time = models.TimeField(
         default='Not set',
         null=True,
         blank=True
+        # TODO: add date validator
     )
     description = models.CharField(
         max_length=300,
@@ -75,7 +81,7 @@ class Transport(models.Model):
     status = models.CharField(
         max_length=20,
         choices=Statuses.choices(),
-        default='Active',
+        default='ACTIVE',
         null=False,
         blank=False
     )
@@ -92,4 +98,5 @@ class Transport(models.Model):
         null=True,
         blank=True
     )
+
 

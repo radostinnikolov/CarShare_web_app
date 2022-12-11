@@ -9,10 +9,10 @@
             <h2>Do you want to delete your profile?</h2>
             <form method="post" action="{% url 'profile delete' pk=request.user.pk %}">
                 {{ form.as_p }}
-                <button class="w3-btn w3-white">Delete</button>
+                <button class="w3-btn w3-teal">Delete</button>
                 {% csrf_token %}
             </form>
-            <a href="{% url 'index' %}" class="w3-btn w3-white">Cancel</a>
+            <a href="{% url 'index' %}" class="w3-btn w3-teal">Cancel</a>
         </div>
     </div>
 

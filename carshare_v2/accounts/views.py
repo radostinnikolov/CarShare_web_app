@@ -35,6 +35,7 @@ class ProfileDetailsView(LoginRequiredMixin, generic.DetailView):
         context['is_friend'] = self.request.user.pk in IndexView.get_friends_ids(self.object.pk)
         context['friend_request_users'] = UserModel.objects.filter(id__in=IndexView.get_requesters_ids(self.object.pk))
         context['friend_users'] = UserModel.objects.filter(id__in=IndexView.get_friends_ids(self.object.pk))
+        context['my_transports'] = IndexView.get_current_user_transports(self.object.pk)
         return context
 
 

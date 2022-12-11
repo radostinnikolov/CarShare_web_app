@@ -14,6 +14,7 @@ class CreateTransportForm(forms.ModelForm):
         }
 
 
+
 class EditTransportForm(forms.ModelForm):
     class Meta:
         model = Transport

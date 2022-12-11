@@ -2,124 +2,185 @@
 {% load static %}
 
 {% block content %}
+    <div class="w3-display-center w3-container w3-card-4 w3-light-grey w3-text-gray w3-margin">
+        <div class="card bottommargin-sm" style="margin-top: 50px; display: block">
+            <div class="card-body">
+                <dl class="row mb-0">
+                    <h1 style="text-align: center">Details
+                        for {{ object.driver.profile.first_name }} {{ object.driver.profile.last_name }}'s
+                        transport</h1>
+                    {% if object.status == 'FINISHED' %}
+                        <h4 class="col-sm-12 center text-uppercase mb-0 mt-3"><img
+                                src="{% static 'demos/interior-design/images/tick.png' %}"
+                                alt="Image"
+                                class="inline-block position-relative"
+                                style="top: -1px;" width="20" height="20">
+                            Finished</h4>
+                    {% else %}
+                        <h4 class="col-sm-12 center text-uppercase mb-0 mt-3"><img
+                                src="{% static 'demos/freelancer/images/icons/plugins.png' %}"
+                                alt="Image"
+                                class="inline-block position-relative"
+                                style="top: -1px;" width="20" height="20">
+                            Active</h4>
+                    {% endif %}
+                    <div class="line line-sm"></div>
+                    <dt class="center text-uppercase fw-medium">From:</dt>
+                    <br>
+                    <dd class="center">{{ object.from_city }}</dd>
 
-    <div class="w3-card-8 w3-grey w3-center profile-card" style="width:100%">
+                    <dt class="center text-uppercase fw-medium">To:</dt>
+                    <br>
+                    <dd class="center">{{ object.to_city }}</dd>
 
-        <div class="w3-container w3-center">
-            <h1>Transport Details</h1>
-            <h2>{{ object.from_city }} to {{ object.to_city }}</h2>
-            <img src="/media/{{ object.driver.profile.profile_picture }}">
-            <p>Driver: <a
-                    href="{% url 'profile details' pk=object.driver.pk %}">{{ object.driver.profile.first_name }}</a>
-            </p>
-            <h4>Description:</h4>
-            <p>{{ transport.description }}</p>
-            <h4>Starting date: {{ transport.date }}</h4>
-            <h4>Time: {{ transport.time }}</h4>
-            <h4>Status: {{ transport.status }}</h4>
-            <h4>Free seats: {{ free_seats }}</h4>
+                    <dt class="center text-uppercase fw-medium">Date and time:</dt>
+                    <br>
+                    <dd class="center">{{ object.date }} - {{ object.time }}</dd>
 
-            <!-- Passengers section start-->
-            <h4>Passengers:</h4>
-            {% if not object.passengers.all %}
-                <p>There are currently 0 passengers for this transport.</p>
-            {% else %}
-                {% if request.user.pk == object.driver.pk %}
-                    {% for passenger in object.passengers.all %}
-                        <p>-
-                            <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }}</a>
-                            ->
-                        <form method="post"
-                              action="{% url 'remove passenger' transport_id=transport.pk user_id=passenger.pk %}">
-                            <button>Remove</button>
-                            {% csrf_token %}
-                        </form>
-                        </p>
-                    {% endfor %}
+                    <dt class="center text-uppercase fw-medium">Driver:</dt>
+                    <br>
+                    <dd class="center"><a
+                            href="{% url 'profile details' pk=object.driver.pk %}">{{ object.driver.profile.first_name }} {{ object.driver.profile.last_name }}</a>
+                    </dd>
+
+                    <dt class="center text-uppercase fw-medium">Total seats:</dt>
+                    <br>
+                    <dd class="center">{{ object.total_seats }}</dd>
+
+                    <dt class="center text-uppercase fw-medium">Free seats:</dt>
+                    <br>
+                    <dd class="center">{{ free_seats }}</dd>
+                </dl>
+                {% if request.user == object.driver %}
+                    <div style="text-align: center">
+                        <a href="{% url 'transports edit' pk=object.pk %}" class="w3-btn w3-teal">Edit Transport</a>
+                        <a href="{% url 'transports delete' pk=object.pk %}" class="w3-btn w3-teal">Delete Transport</a>
+                    </div>
+
                 {% else %}
-                    {% for passenger in object.passengers.all %}
-                        {% if request.user.pk == passenger.pk %}
-                            <p>-
-                                <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }}</a>
-                                ->
+                    {% if request.user not in object.requests.all and request.user not in object.passengers.all %}
+                        {% if object.status == 'Active' %}
                             <form method="post"
-                                  action="{% url 'remove passenger' transport_id=transport.pk user_id=passenger.pk %}">
-                                <button>Leave</button>
+                                  action="{% url 'send transport request' transport_id=transport.pk user_id=request.user.pk %}"
+                                  style="text-align: center">
+                                <button class="w3-btn w3-teal">Send request to join</button>
                                 {% csrf_token %}
                             </form>
-                            </p>
                         {% else %}
-                            <p>-
-                                <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }}</a>
-                            </p>
+                            <p>This transport has finished!</p>
                         {% endif %}
-                    {% endfor %}
-                {% endif %}
-            {% endif %}
-            <!-- Passengers section end-->
-
-            <!-- Requests section start-->
-            {% if request.user.pk == object.driver.pk %}
-                <h4>Passenger requests:</h4>
-                {% if not object.requests.all %}
-                    <p>There are currently 0 requests.</p>
-                {% else %}
-                    {% for user in object.requests.all %}
-                        <p><a href="{% url 'profile details' pk=user.pk %}">{{ user.profile.first_name }}</a></p>
-                        <form method="post"
-                              action="{% url "accept passenger" transport_id=object.pk user_id=user.pk %}">
-                            <button>Accept</button>
-                            {% csrf_token %}
-                        </form>
-                        <form method="post"
-                              action="{% url "reject passenger" transport_id=object.pk user_id=user.pk %}">
-                            <button>Reject</button>
-                            {% csrf_token %}
-                        </form>
-                    {% endfor %}
-                {% endif %}
-                <a href="{% url 'transports edit' pk=object.pk %}">Edit Transport</a>
-                <a href="{% url 'transports delete' pk=object.pk %}">Delete Transport</a>
-            {% else %}
-                {% if request.user not in object.requests.all and request.user not in object.passengers.all %}
-                    <form method="post"
-                          action="{% url 'send transport request' transport_id=transport.pk user_id=request.user.pk %}">
-                        <button>Send request to join</button>
-                        {% csrf_token %}
-                    </form>
-                {% elif request.user in object.requests.all %}
-                    <p>You have sent a request to join.</p>
-                {% endif %}
-            {% endif %}
-            <!-- Requests section end-->
-
-            <!-- Chatroom section start-->
-            <h2>Chatroom:</h2>
-            {% if object.chatroom_name %}
-                {% if request.user in object.passengers.all or request.user.pk == object.driver.pk%}
-                    <p>Link to chatroom for this transport: <a
-                            href="{% url 'room' room_name=object.chatroom_name %}">{{ object.chatroom_name }}</a></p>
-                {% else %}
-                    <p>You are not part of this transport.</p>
-                {% endif %}
-            {% else %}
-                {% if request.user.pk == object.driver.pk %}
-                    <p>Create chatroom:</p>
-                    <form method="post" action="{% url 'chatroom create' transport_id=object.pk %}">
-                        <input type="text" name="chatroom_name">
-                        <button>Create</button>
-                        {% csrf_token %}
-                    </form>
-                {% else %}
-                    {% if request.user in object.passengers.all %}
-                        <p>Currently there is no chatroom for this transport!</p>
-                    {% else %}
-                        <p>You are not part of this transport.</p>
+                    {% elif request.user in object.requests.all %}
+                        <p>You have sent a request to join.</p>
                     {% endif %}
                 {% endif %}
-            {% endif %}
 
-            <!-- Chatroom section end-->
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-5 mt-5 mt-md-0" style="width: 50%; margin-top: 50px; display: inline">
+
+            <div class="card rounded-top bg-white border-0 w-100 shadow p-3">
+                <div class="card-body">
+                    <h4 style="text-align: center">Passengers:</h4>
+                    {% if not object.passengers.all %}
+                        <p>There are currently 0 passengers for this transport.</p>
+                    {% else %}
+                        {% for passenger in object.passengers.all %}
+                            <div style="text-align: center">
+                                <a href="{% url 'profile details' pk=passenger.pk %}">{{ passenger.profile.first_name }} {{ passenger.profile.last_name }}</a>
+                                <form style="text-align: center" method="post"
+                                      action="{% url 'remove passenger' transport_id=transport.pk user_id=passenger.pk %}">
+                                    {% if request.user.pk == object.driver.pk %}
+                                        <button class="w3-btn w3-teal">Remove</button>
+                                    {% endif %}
+                                    {% if request.user.pk == passenger.pk %}
+                                        <button class="w3-btn w3-teal">Leave</button>
+                                    {% endif %}
+                                    {% csrf_token %}
+                                </form>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+        <br>
+        {% if request.user.pk == object.driver.pk %}
+            <div class="col-xl-4 col-lg-5 mt-5 mt-md-0" style="width: 50%; margin-top: 50px; display: inline">
+
+                <div class="card rounded-top bg-white border-0 w-100 shadow p-3">
+                    <div class="card-body">
+
+                        <h4 style="text-align: center;">Passenger requests:</h4>
+                        {% if not object.requests.all %}
+                            <p>There are currently 0 requests.</p>
+                        {% else %}
+                            {% for user in object.requests.all %}
+                                <div class="w3-container" style="width: 50%; display: inline; text-align: center;">
+                                    <p>
+                                        <a href="{% url 'profile details' pk=user.pk %}">{{ user.profile.first_name }} {{ user.profile.last_name }}</a>
+                                    </p>
+                                    <div style="text-align: center">
+                                        <form method="post"
+                                              action="{% url "accept passenger" transport_id=object.pk user_id=user.pk %}"
+                                              style="text-align: center; display: inline">
+                                            <button class="w3-btn w3-teal">Accept</button>
+                                            {% csrf_token %}
+                                        </form>
+
+                                        <form method="post"
+                                              action="{% url "reject passenger" transport_id=object.pk user_id=user.pk %}"
+                                              style="text-align: center; display: inline">
+                                            <button class="w3-btn w3-teal">Reject</button>
+                                            {% csrf_token %}
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                            {% endfor %}
+                        {% endif %}
+
+                    </div>
+                </div>
+
+            </div>
+        {% endif %}
+        <br>
+        <div class="col-xl-4 col-lg-5 mt-5 mt-md-0" style="width: 50%; margin-top: 50px; display: inline">
+
+            <div class="card rounded-top bg-white border-0 w-100 shadow p-3">
+                <div class="card-body">
+                    <h4 style="text-align: center">Chatroom:</h4>
+                    {% if object.chatroom_name %}
+                        {% if request.user in object.passengers.all or request.user.pk == object.driver.pk %}
+                            <p>Link to chatroom for this transport: <a
+                                    href="{% url 'room' room_name=object.chatroom_name %}">{{ object.chatroom_name }}</a>
+                            </p>
+                        {% else %}
+                            <p>You are not part of this transport.</p>
+                        {% endif %}
+                    {% else %}
+                        {% if request.user.pk == object.driver.pk %}
+                            <p>Create chatroom:</p>
+                            <form method="post" action="{% url 'chatroom create' transport_id=object.pk %}"
+                                  style="text-align: center">
+                                <p><input type="text" name="chatroom_name"></p>
+                                <a class="w3-btn w3-teal">Create</a>
+                                {% csrf_token %}
+                            </form>
+                        {% else %}
+                            {% if request.user in object.passengers.all %}
+                                <p>Currently there is no chatroom for this transport!</p>
+                            {% else %}
+                                <p>You are not part of this transport.</p>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+
         </div>
     </div>
 
