@@ -131,9 +131,9 @@ MEDIA_URL = 'media/'
 # MEDIA_ROOT = BASE_DIR / 'mediafiles'
 
 cloudinary.config(
-    cloud_name="du57myc13",
-    api_key="656698431477354",
-    api_secret="m_EfMVkGI73Mm5zhWPX177e5Zhc",
+    cloud_name="xxxxx",
+    api_key="xxxxx",
+    api_secret="xxxxx",
     secure=True
 )
 
