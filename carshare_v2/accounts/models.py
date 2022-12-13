@@ -1,5 +1,6 @@
+from cloudinary.models import CloudinaryField
 from django.contrib.auth import models as auth_models
-from django.core.validators import MinValueValidator, MinLengthValidator
+from django.core.validators import MinValueValidator, MinLengthValidator, EmailValidator
 from django.db import models
 
 from carshare_v2.accounts.managers import AppUserManager
@@ -55,9 +56,8 @@ class Profile(models.Model):
         blank=True
     )
 
-    profile_picture = models.ImageField(
-        default='images/Default-welcomer.png',
-        upload_to='images',
+    profile_picture = CloudinaryField(
+        default='image/upload/v1670924768/pokmkgecsop9suxl9xri.png',
         null=True,
         blank=True
     )

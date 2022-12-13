@@ -1,3 +1,5 @@
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView
@@ -6,7 +8,7 @@ from carshare_v2.friends.forms import BaseFriendRequestForm, BaseFriendForm
 from carshare_v2.friends.models import FriendRequest, Friend
 
 
-class FriendRequestSend(CreateView):
+class FriendRequestSend(LoginRequiredMixin, CreateView):
     model = FriendRequest
     form_class = BaseFriendRequestForm
     template_name = 'base/empty.html'
@@ -23,7 +25,7 @@ class FriendRequestSend(CreateView):
             }))
 
 
-class FriendRequestDelete(DeleteView):
+class FriendRequestDelete(LoginRequiredMixin, DeleteView):
     model = FriendRequest
     form_class = BaseFriendRequestForm
 
@@ -38,7 +40,7 @@ class FriendRequestDelete(DeleteView):
         return obj
 
 
-class FriendRequestAccept(CreateView):
+class FriendRequestAccept(LoginRequiredMixin, CreateView):
     model = Friend
     form_class = BaseFriendForm
     template_name = 'base/empty.html'
@@ -57,7 +59,7 @@ class FriendRequestAccept(CreateView):
             self.remove_the_request(self.kwargs['requester_id'], self.kwargs['receiver_id'])
             return redirect(reverse_lazy('index'))
 
-
+@login_required
 def delete_friendship(request, deleter_id, deleted_id):
     if request.method == "POST":
         try:

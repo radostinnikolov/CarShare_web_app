@@ -12,6 +12,10 @@ class CreateTransportForm(forms.ModelForm):
             'date': forms.SelectDateWidget(),
             'time': forms.TimeInput()
         }
+        help_texts = {
+            'time': 'Enter time in format: "HH:MM"'
+        }
+
 
 
 
@@ -24,9 +28,6 @@ class EditTransportForm(forms.ModelForm):
             'date': forms.SelectDateWidget(),
             'time': forms.TimeInput()
         }
-
-
-class DeleteTransportForm(forms.ModelForm):
-    class Meta:
-        model = Transport
-        fields = ()
+        help_texts = {
+            'time': 'Enter time in format: "HH:MM"'
+        }

@@ -1,19 +1,23 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-    <div class="w3-display-center">
+    <div class="w3-display-center w3-container w3-card-4 w3-light-grey w3-text-gray w3-margin">
+        <div class="card bottommargin-sm" style="margin-top: 50px; display: block">
+            <div class="card-body">
 
-        <div class="vertical-middle">
-            <div class="container text-center py-5 py-md-0">
+                <div class="vertical-middle">
+                    <div class="container text-center py-5 py-md-0">
 
-                <div class="error404">404</div>
+                        <div class="error404">404</div>
 
-                <div class="heading-block border-bottom-0">
-                    <h4>Ooopps! The Page you were looking for couldn't be found.</h4>
+                        <div class="heading-block border-bottom-0">
+                            <h4>Ooopps! The Page you were looking for couldn't be found.</h4>
+                        </div>
+                        <a href="javascript:history.back()" class="w3-btn w3-teal">Go Back</a>
+                    </div>
                 </div>
 
             </div>
         </div>
-
     </div>
 {% endblock %}

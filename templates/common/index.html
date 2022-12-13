@@ -12,7 +12,7 @@
                 <div class="w3-card w3-round w3-white">
                     <div class="w3-container">
                         <h4 class="w3-center">{{ user.profile.first_name }} {{ user.profile.last_name }}</h4>
-                        <p class="w3-center"><img src="/media/{{ user.profile.profile_picture }}" class="w3-circle"
+                        <p class="w3-center"><img src="{{ user.profile.profile_picture.url }}" class="w3-circle"
                                                   style="height:106px;width:106px" alt="Avatar"></p>
                         <hr>
                         {% if user.profile.description %}
@@ -54,7 +54,7 @@
                         <div class="entry event col-12">
                             <div class="grid-inner row g-0 p-4" style="border-style: solid; border-color: teal">
                                 <div class="col-md-5 mb-md-0">
-                                    <img src="/media/{{ transport.driver.profile.profile_picture }}" alt="Avatar"
+                                    <img src="{{ transport.driver.profile.profile_picture.url }}" alt="Avatar"
                                          class="w3-left w3-circle w3-margin-right"
                                          style="width:100%; height: auto;">
 
@@ -70,7 +70,11 @@
                                             <li><span
                                                     class="badge bg-warning text-dark py-1 px-2">{{ transport.status }}</span>
                                             </li>
-                                            <li><i class="icon-time"></i> {{ transport.time }} {{ transport.date }}</li>
+                                            <li><i class="icon-time"></i> {% if transport.time %}
+                                                {{ transport.time }}
+                                            {% else %}
+                                                time not set
+                                            {% endif %} {{ transport.date }}</li>
                                             <li><i class="icon-map-marker2"></i> {{ transport.from_city }}
                                                 - {{ transport.to_city }}</li>
                                         </ul>
@@ -99,7 +103,11 @@
                                 <div class="w3-container" style="margin: 20px; border-style: solid; border-color: teal">
                                     <p>Upcoming transport:</p>
                                     <p><strong>{{ transport.from_city }} - {{ transport.to_city }}</strong></p>
-                                    <p>{{ transport.date }} {{ transport.time }}</p>
+                                    <p>{{ transport.date }} {% if transport.time %}
+                                        {{ transport.time }}
+                                    {% else %}
+                                        time not set
+                                    {% endif %}</p>
                                     <p>
                                         <a href="{% url 'transports details' pk=transport.pk %}"
                                            class="w3-button w3-block w3-theme-l4">Details</a>
@@ -122,7 +130,7 @@
                         {% for request in friend_requests %}
                             <div class="w3-container" style="margin: 20px; border-style: solid; border-color: teal">
                                 <p>Friend Request</p>
-                                <img src="/media/{{ request.requester.profile.profile_picture }}" alt="Avatar"
+                                <img src="{{ request.requester.profile.profile_picture.url }}" alt="Avatar"
                                      style="width:50%"><br>
                                 <span>{{ request.requester.profile.first_name }} {{ request.requester.profile.last_name }}</span>
                                 <div class="w3-row w3-opacity">

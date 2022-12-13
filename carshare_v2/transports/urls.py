@@ -1,4 +1,5 @@
 from django.urls import path
+from django.views.decorators.cache import cache_page
 
 from carshare_v2.transports.views import TransportsAllListView, TransportsCreateView, TransportsDetailView, \
     TransportsEditView, TransportsDeleteView, \
@@ -7,7 +8,7 @@ from carshare_v2.transports.views import TransportsAllListView, TransportsCreate
 urlpatterns = (
     path('all/', TransportsAllListView.as_view(), name='transports all'),
     path('create/', TransportsCreateView.as_view(), name='transports create'),
-    path('details/<int:pk>/', TransportsDetailView.as_view(), name='transports details'),
+    path('details/<int:pk>/', cache_page(60 * 15)(TransportsDetailView.as_view()), name='transports details'),
     path('edit/<int:pk>/', TransportsEditView.as_view(), name='transports edit'),
     path('delete/<int:pk>/', TransportsDeleteView.as_view(), name='transports delete'),
     path('send_transport_request/<int:transport_id>/<int:user_id>/', send_transport_request,

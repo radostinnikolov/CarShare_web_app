@@ -1,15 +1,21 @@
-from datetime import datetime, date
+import datetime
 from enum import Enum
 
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
+
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
-
+from django.db.models.signals import post_save
 
 from carshare_v2.common.models import City
+from carshare_v2.transports.signals import clear_cache
+from carshare_v2.transports.validators import validate_date_is_not_in_the_past
 
 UserModel = get_user_model()
+
+
+
 
 
 class ChoicesEnum(Enum):
@@ -42,7 +48,7 @@ class Transport(models.Model):
     )
     driver = models.ForeignKey(
         UserModel,
-        on_delete=models.RESTRICT,
+        on_delete=models.CASCADE,
         related_name='driver',
         related_query_name='driver',
         null=False,
@@ -61,16 +67,16 @@ class Transport(models.Model):
         blank=True
     )
     date = models.DateField(
-        validators=(),
+        validators=(
+            validate_date_is_not_in_the_past,
+        ),
         null=False,
         blank=False
-        #TODO: add date validator
+
     )
     time = models.TimeField(
-        default='Not set',
         null=True,
         blank=True
-        # TODO: add date validator
     )
     description = models.CharField(
         max_length=300,
@@ -98,5 +104,10 @@ class Transport(models.Model):
         null=True,
         blank=True
     )
+    post_save.connect(clear_cache)
+
+    def clean(self):
+        if self.from_city_id == self.to_city_id:
+            raise ValidationError('"From city" and "To city" fields must be be different.')
 
 

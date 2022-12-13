@@ -35,7 +35,12 @@
 
                     <dt class="center text-uppercase fw-medium">Date and time:</dt>
                     <br>
-                    <dd class="center">{{ object.date }} - {{ object.time }}</dd>
+                    <dd class="center">{{ object.date }} -
+                        {% if object.time %}
+                            {{ object.time }}
+                        {% else %}
+                            time not set
+                        {% endif %}</dd>
 
                     <dt class="center text-uppercase fw-medium">Driver:</dt>
                     <br>

@@ -1,12 +1,20 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-    <h1>Do you really want to delete this transport?</h1>
-    <form method="post" action="{% url 'transports delete' pk=object.pk %}">
-        {{ form }}
-        <button>Delete</button>
-        {% csrf_token %}
-    </form>
-    <a href="{% url 'transports details' pk=object.pk %}">Cancel</a>
+    <div class="w3-display-center w3-container w3-card-4 w3-light-grey w3-text-gray w3-margin">
+        <div class="card bottommargin-sm" style="margin-top: 50px; display: block">
+            <div class="card-body">
+                <div class="w3-row w3-section w3-center">
+                    <h1>Do you really want to delete this transport?</h1>
+                    <form method="post" action="{% url 'transports delete' pk=object.pk %}">
+                        {{ form }}
+                        <button class="w3-btn w3-teal">Delete</button>
+                        {% csrf_token %}
+                    </form>
+                    <a href="{% url 'transports details' pk=object.pk %}" class="w3-btn w3-teal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

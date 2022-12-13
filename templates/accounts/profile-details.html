@@ -11,7 +11,7 @@
 
                     <div class="col-md-9">
 
-                        <img src="/media/{{ object.profile.profile_picture }}"
+                        <img src="{{ object.profile.profile_picture.url }}"
                              class="alignleft img-circle img-thumbnail my-0" alt="Avatar" style="max-width: 84px;">
 
                         <div class="heading-block border-0">
@@ -102,7 +102,7 @@
                                                                     <div class="comment-author vcard">
 																	<span class="comment-avatar clearfix">
 																	<img alt="Image"
-                                                                         src="/media/{{ comment.from_profile.profile.profile_picture }}"
+                                                                         src="{{ comment.from_profile.profile.profile_picture.url }}"
                                                                          class="avatar avatar-60 photo avatar-default"
                                                                          width="60" height="60"></span>
                                                                     </div>
@@ -212,7 +212,7 @@
                                                                         <div class="comment-author vcard">
 																	<span class="comment-avatar clearfix">
 																	<img alt="Image"
-                                                                         src="/media/{{ user.profile.profile_picture }}"
+                                                                         src="{{ user.profile.profile_picture.url }}"
                                                                          class="avatar avatar-60 photo avatar-default"
                                                                          width="60" height="60"></span>
                                                                         </div>
@@ -258,7 +258,7 @@
                                                                     <div class="comment-author vcard">
 																	<span class="comment-avatar clearfix">
 																	<img alt="Image"
-                                                                         src="/media/{{ user.profile.profile_picture }}"
+                                                                         src="{{ user.profile.profile_picture.url }}"
                                                                          class="avatar avatar-60 photo avatar-default"
                                                                          width="60" height="60"></span>
                                                                     </div>

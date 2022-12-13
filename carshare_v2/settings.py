@@ -1,17 +1,15 @@
 import os
 from pathlib import Path
 
+import cloudinary
 from django.urls import reverse_lazy
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-
 DEBUG = bool(int(os.environ.get('DEBUG', 1)))
-print
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(' ')
 
@@ -74,7 +72,6 @@ WSGI_APPLICATION = 'carshare_v2.wsgi.application'
 
 ASGI_APPLICATION = "carshare_v2.asgi.application"
 
-
 DATABASES = {
     'default': {
         'ENGINE': os.environ.get('DB_ENGINE'),
@@ -86,6 +83,12 @@ DATABASES = {
     }
 }
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+        'LOCATION': 'redis://127.0.0.1:6379'
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -123,10 +126,16 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [BASE_DIR / 'staticfiles']
 
-
 MEDIA_URL = 'media/'
+#
+# MEDIA_ROOT = BASE_DIR / 'mediafiles'
 
-MEDIA_ROOT = BASE_DIR / 'mediafiles'
+cloudinary.config(
+    cloud_name="du57myc13",
+    api_key="656698431477354",
+    api_secret="m_EfMVkGI73Mm5zhWPX177e5Zhc",
+    secure=True
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

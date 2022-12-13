@@ -1,12 +1,12 @@
 from django.contrib.auth import get_user_model
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, DetailView, UpdateView, DeleteView
 
 
-from carshare_v2.transports.forms import CreateTransportForm, EditTransportForm, DeleteTransportForm
+from carshare_v2.transports.forms import CreateTransportForm, EditTransportForm
 from carshare_v2.transports.models import Transport
 
 
@@ -37,7 +37,7 @@ class TransportsCreateView(LoginRequiredMixin, CreateView):
         return render(request, 'transports/transports-create.html', context={'form': form})
 
 
-class TransportsDetailView(DetailView):
+class TransportsDetailView(LoginRequiredMixin, DetailView):
     model = Transport
     template_name = 'transports/transports-details.html'
 
@@ -47,7 +47,7 @@ class TransportsDetailView(DetailView):
         return context
 
 
-class TransportsEditView(UpdateView):
+class TransportsEditView(LoginRequiredMixin, UpdateView):
     model = Transport
     template_name = 'transports/transports-edit.html'
     form_class = EditTransportForm
@@ -58,14 +58,13 @@ class TransportsEditView(UpdateView):
         })
 
 
-class TransportsDeleteView(DeleteView):
+class TransportsDeleteView(LoginRequiredMixin, DeleteView):
     model = Transport
     template_name = 'transports/transports-delete.html'
-    form_class = DeleteTransportForm
     success_url = reverse_lazy('transports all')
 
 
-
+@login_required
 def send_transport_request(request, transport_id, user_id):
     current_transport = Transport.objects.filter(pk=transport_id).get()
     current_user = UserModel.objects.filter(pk=user_id).get()
@@ -75,7 +74,7 @@ def send_transport_request(request, transport_id, user_id):
             'pk': transport_id
         }))
 
-
+@login_required
 def remove_passenger_from_transport(request, transport_id, user_id):
     current_transport = Transport.objects.filter(pk=transport_id).get()
     current_user = UserModel.objects.filter(pk=user_id).get()
@@ -85,7 +84,7 @@ def remove_passenger_from_transport(request, transport_id, user_id):
             'pk': transport_id
         }))
 
-
+@login_required
 def accept_passenger_request(request, transport_id, user_id):
     current_transport = Transport.objects.filter(pk=transport_id).get()
     current_user = UserModel.objects.filter(pk=user_id).get()
@@ -96,7 +95,7 @@ def accept_passenger_request(request, transport_id, user_id):
             'pk': transport_id
         }))
 
-
+@login_required
 def reject_passenger_request(request, transport_id, user_id):
     current_transport = Transport.objects.filter(pk=transport_id).get()
     current_user = UserModel.objects.filter(pk=user_id).get()
@@ -105,7 +104,7 @@ def reject_passenger_request(request, transport_id, user_id):
         return redirect(reverse_lazy('transports details', kwargs={
             'pk': transport_id
         }))
-
+@login_required
 def create_chatroom(request, transport_id):
     current_transport = Transport.objects.filter(pk=transport_id).get()
     if request.method == 'POST':
