@@ -122,23 +122,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [BASE_DIR / 'staticfiles']
 
+STATIC_ROOT = '/tmp/carshare/staticfiles/'
 MEDIA_URL = 'media/'
 #
 # MEDIA_ROOT = BASE_DIR / 'mediafiles'
 
 cloudinary.config(
-    cloud_name="xxxxx",
-    api_key="xxxxx",
-    api_secret="xxxxx",
+    cloud_name=os.environ.get('CLOUD_NAME'),
+    api_key=os.environ.get('API_KEY'),
+    api_secret=os.environ.get('API_SECRET'),
     secure=True
 )
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

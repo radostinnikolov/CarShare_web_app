@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+  web:
+    image: radostin369/carshare_app
+    build: ./CarShare_web_app
+    command: gunicorn carshare_v2.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./staticfiles:/tmp/carshare/staticfiles
+    ports:
+      - 8000:8000
+    env_file:
+      - ./CarShare_web_app/envs/prod.env
+    depends_on:
+      - postgres
+      - redis-master
+  postgres:    
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: databasepassword
+      POSTGRES_USER: postgres
+      POSTGRES_DB: carshare_v2
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - ./postgresql:/var/lib/postgresql/data
+  redis-master:
+    image: 'bitnami/redis:latest'
+    ports:
+      - '6379:6379'
+    environment:
+      - REDIS_REPLICATION_MODE=master
+      - REDIS_PASSWORD=my_master_password
+  nginx:
+    image: nginx
+    ports:
+      - 81:80
+      - 443:443
+    volumes:
+      - ./staticfiles:/home/app/web/staticfiles
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/logs:/var/log/nginx
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+    depends_on:
+      - web
