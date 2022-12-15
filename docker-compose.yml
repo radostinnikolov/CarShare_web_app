@@ -13,7 +13,7 @@ services:
       - ./CarShare_web_app/envs/prod.env
     depends_on:
       - postgres
-      - redis-master
+      - cache
     environment:
       REDIS_HOST: cache
       REDIS_PORT: 6379
