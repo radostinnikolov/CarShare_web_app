@@ -22,7 +22,6 @@ COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8001
-CMD ["daphne", "-b", "0.0.0.0", "-p", "8001", "carshare_v2.asgi:application"]
+RUN daphne -b 0.0.0.0 -p 8000 carshare_v2.asgi:application
 
 COPY . .
