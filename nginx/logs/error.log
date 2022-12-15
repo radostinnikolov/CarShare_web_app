@@ -1,0 +1,1647 @@
+2022/12/14 09:56:56 [notice] 1#1: using the "epoll" event method
+2022/12/14 09:56:56 [notice] 1#1: nginx/1.23.3
+2022/12/14 09:56:56 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 09:56:56 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 09:56:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 09:56:56 [notice] 1#1: start worker processes
+2022/12/14 09:56:56 [notice] 1#1: start worker process 21
+2022/12/14 09:56:56 [notice] 1#1: start worker process 22
+2022/12/14 09:56:56 [notice] 1#1: start worker process 23
+2022/12/14 09:56:56 [notice] 1#1: start worker process 24
+2022/12/14 09:56:56 [notice] 1#1: start worker process 25
+2022/12/14 09:56:56 [notice] 1#1: start worker process 26
+2022/12/14 09:56:56 [notice] 1#1: start worker process 27
+2022/12/14 09:56:56 [notice] 1#1: start worker process 28
+2022/12/14 09:56:56 [notice] 1#1: start worker process 29
+2022/12/14 09:56:56 [notice] 1#1: start worker process 30
+2022/12/14 09:56:56 [notice] 1#1: start worker process 31
+2022/12/14 09:56:56 [notice] 1#1: start worker process 32
+2022/12/14 10:01:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 10:01:58 [notice] 21#21: gracefully shutting down
+2022/12/14 10:01:58 [notice] 23#23: gracefully shutting down
+2022/12/14 10:01:58 [notice] 24#24: gracefully shutting down
+2022/12/14 10:01:58 [notice] 25#25: gracefully shutting down
+2022/12/14 10:01:58 [notice] 26#26: gracefully shutting down
+2022/12/14 10:01:58 [notice] 28#28: gracefully shutting down
+2022/12/14 10:01:58 [notice] 27#27: gracefully shutting down
+2022/12/14 10:01:58 [notice] 31#31: gracefully shutting down
+2022/12/14 10:01:58 [notice] 29#29: gracefully shutting down
+2022/12/14 10:01:58 [notice] 32#32: gracefully shutting down
+2022/12/14 10:01:58 [notice] 30#30: gracefully shutting down
+2022/12/14 10:01:58 [notice] 22#22: gracefully shutting down
+2022/12/14 10:01:58 [notice] 21#21: exiting
+2022/12/14 10:01:58 [notice] 23#23: exiting
+2022/12/14 10:01:58 [notice] 24#24: exiting
+2022/12/14 10:01:58 [notice] 25#25: exiting
+2022/12/14 10:01:58 [notice] 26#26: exiting
+2022/12/14 10:01:58 [notice] 28#28: exiting
+2022/12/14 10:01:58 [notice] 27#27: exiting
+2022/12/14 10:01:58 [notice] 31#31: exiting
+2022/12/14 10:01:58 [notice] 29#29: exiting
+2022/12/14 10:01:58 [notice] 32#32: exiting
+2022/12/14 10:01:58 [notice] 30#30: exiting
+2022/12/14 10:01:58 [notice] 22#22: exiting
+2022/12/14 10:01:58 [notice] 21#21: exit
+2022/12/14 10:01:58 [notice] 23#23: exit
+2022/12/14 10:01:58 [notice] 24#24: exit
+2022/12/14 10:01:58 [notice] 25#25: exit
+2022/12/14 10:01:58 [notice] 26#26: exit
+2022/12/14 10:01:58 [notice] 28#28: exit
+2022/12/14 10:01:58 [notice] 27#27: exit
+2022/12/14 10:01:58 [notice] 31#31: exit
+2022/12/14 10:01:58 [notice] 29#29: exit
+2022/12/14 10:01:58 [notice] 32#32: exit
+2022/12/14 10:01:58 [notice] 30#30: exit
+2022/12/14 10:01:58 [notice] 22#22: exit
+2022/12/14 10:01:58 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 10:01:58 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:01:58 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 10:01:58 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:01:58 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/14 10:01:58 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:01:58 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/12/14 10:01:58 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/12/14 10:01:58 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:01:58 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/12/14 10:01:58 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: worker process 32 exited with code 0
+2022/12/14 10:01:58 [notice] 1#1: exit
+2022/12/14 10:02:18 [emerg] 1#1: host not found in upstream "web:8000" in /etc/nginx/conf.d/web.conf:2
+2022/12/14 10:03:02 [emerg] 1#1: host not found in upstream "web:8000" in /etc/nginx/conf.d/web.conf:2
+2022/12/14 10:04:27 [emerg] 1#1: host not found in upstream "web:8000" in /etc/nginx/conf.d/web.conf:2
+2022/12/14 10:05:07 [notice] 1#1: using the "epoll" event method
+2022/12/14 10:05:07 [notice] 1#1: nginx/1.23.3
+2022/12/14 10:05:07 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 10:05:07 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 10:05:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 10:05:07 [notice] 1#1: start worker processes
+2022/12/14 10:05:07 [notice] 1#1: start worker process 20
+2022/12/14 10:05:07 [notice] 1#1: start worker process 21
+2022/12/14 10:05:07 [notice] 1#1: start worker process 22
+2022/12/14 10:05:07 [notice] 1#1: start worker process 23
+2022/12/14 10:05:07 [notice] 1#1: start worker process 24
+2022/12/14 10:05:07 [notice] 1#1: start worker process 25
+2022/12/14 10:05:07 [notice] 1#1: start worker process 26
+2022/12/14 10:05:07 [notice] 1#1: start worker process 27
+2022/12/14 10:05:07 [notice] 1#1: start worker process 28
+2022/12/14 10:05:07 [notice] 1#1: start worker process 29
+2022/12/14 10:05:07 [notice] 1#1: start worker process 30
+2022/12/14 10:05:07 [notice] 1#1: start worker process 31
+2022/12/14 10:05:30 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:05:30 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:05:30 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:05:30 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:05:30 [error] 20#20: *1 no live upstreams while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "http://carshare/favicon.ico", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 10:05:58 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:05:58 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:05:58 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:05:58 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:05:58 [error] 20#20: *1 no live upstreams while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "http://carshare/favicon.ico", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 10:06:11 [error] 21#21: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "127.0.0.1:81"
+2022/12/14 10:06:11 [warn] 21#21: *6 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "127.0.0.1:81"
+2022/12/14 10:06:11 [error] 21#21: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "127.0.0.1:81"
+2022/12/14 10:06:11 [warn] 21#21: *6 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "127.0.0.1:81"
+2022/12/14 10:06:11 [error] 21#21: *6 no live upstreams while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "http://carshare/favicon.ico", host: "127.0.0.1:81", referrer: "http://127.0.0.1:81/"
+2022/12/14 10:06:29 [error] 22#22: *9 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:06:29 [warn] 22#22: *9 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:06:29 [error] 22#22: *9 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:06:29 [warn] 22#22: *9 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:23:00 [error] 23#23: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:23:00 [warn] 23#23: *12 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:23:00 [error] 23#23: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:23:00 [warn] 23#23: *12 upstream server temporarily disabled while connecting to upstream, client: 172.21.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:36:28 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 10:36:28 [notice] 23#23: gracefully shutting down
+2022/12/14 10:36:28 [notice] 26#26: gracefully shutting down
+2022/12/14 10:36:28 [notice] 22#22: gracefully shutting down
+2022/12/14 10:36:28 [notice] 29#29: gracefully shutting down
+2022/12/14 10:36:28 [notice] 27#27: gracefully shutting down
+2022/12/14 10:36:28 [notice] 24#24: gracefully shutting down
+2022/12/14 10:36:28 [notice] 30#30: gracefully shutting down
+2022/12/14 10:36:28 [notice] 26#26: exiting
+2022/12/14 10:36:28 [notice] 28#28: gracefully shutting down
+2022/12/14 10:36:28 [notice] 21#21: gracefully shutting down
+2022/12/14 10:36:28 [notice] 25#25: gracefully shutting down
+2022/12/14 10:36:28 [notice] 20#20: gracefully shutting down
+2022/12/14 10:36:28 [notice] 31#31: gracefully shutting down
+2022/12/14 10:36:28 [notice] 23#23: exiting
+2022/12/14 10:36:28 [notice] 22#22: exiting
+2022/12/14 10:36:28 [notice] 29#29: exiting
+2022/12/14 10:36:28 [notice] 24#24: exiting
+2022/12/14 10:36:28 [notice] 30#30: exiting
+2022/12/14 10:36:28 [notice] 27#27: exiting
+2022/12/14 10:36:28 [notice] 26#26: exit
+2022/12/14 10:36:28 [notice] 28#28: exiting
+2022/12/14 10:36:28 [notice] 21#21: exiting
+2022/12/14 10:36:28 [notice] 25#25: exiting
+2022/12/14 10:36:28 [notice] 23#23: exit
+2022/12/14 10:36:28 [notice] 20#20: exiting
+2022/12/14 10:36:28 [notice] 22#22: exit
+2022/12/14 10:36:28 [notice] 29#29: exit
+2022/12/14 10:36:28 [notice] 24#24: exit
+2022/12/14 10:36:28 [notice] 31#31: exiting
+2022/12/14 10:36:28 [notice] 30#30: exit
+2022/12/14 10:36:28 [notice] 27#27: exit
+2022/12/14 10:36:28 [notice] 28#28: exit
+2022/12/14 10:36:28 [notice] 21#21: exit
+2022/12/14 10:36:28 [notice] 25#25: exit
+2022/12/14 10:36:28 [notice] 20#20: exit
+2022/12/14 10:36:28 [notice] 31#31: exit
+2022/12/14 10:36:28 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/12/14 10:36:28 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:36:28 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/12/14 10:36:28 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:36:28 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 10:36:28 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:36:28 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/12/14 10:36:28 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:36:28 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/12/14 10:36:28 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/12/14 10:36:28 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 10:36:28 [notice] 1#1: exit
+2022/12/14 10:58:11 [notice] 1#1: using the "epoll" event method
+2022/12/14 10:58:11 [notice] 1#1: nginx/1.23.3
+2022/12/14 10:58:11 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 10:58:11 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 10:58:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 10:58:11 [notice] 1#1: start worker processes
+2022/12/14 10:58:11 [notice] 1#1: start worker process 20
+2022/12/14 10:58:11 [notice] 1#1: start worker process 21
+2022/12/14 10:58:11 [notice] 1#1: start worker process 22
+2022/12/14 10:58:11 [notice] 1#1: start worker process 23
+2022/12/14 10:58:11 [notice] 1#1: start worker process 24
+2022/12/14 10:58:11 [notice] 1#1: start worker process 25
+2022/12/14 10:58:11 [notice] 1#1: start worker process 26
+2022/12/14 10:58:11 [notice] 1#1: start worker process 27
+2022/12/14 10:58:11 [notice] 1#1: start worker process 28
+2022/12/14 10:58:11 [notice] 1#1: start worker process 29
+2022/12/14 10:58:11 [notice] 1#1: start worker process 30
+2022/12/14 10:58:11 [notice] 1#1: start worker process 31
+2022/12/14 10:58:22 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.26.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:58:22 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.26.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:58:22 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.26.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:58:22 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.26.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:58:22 [error] 20#20: *1 no live upstreams while connecting to upstream, client: 172.26.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "http://carshare/favicon.ico", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 10:59:18 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 10:59:18 [notice] 20#20: gracefully shutting down
+2022/12/14 10:59:18 [notice] 24#24: gracefully shutting down
+2022/12/14 10:59:18 [notice] 22#22: gracefully shutting down
+2022/12/14 10:59:18 [notice] 21#21: gracefully shutting down
+2022/12/14 10:59:18 [notice] 23#23: gracefully shutting down
+2022/12/14 10:59:18 [notice] 29#29: gracefully shutting down
+2022/12/14 10:59:18 [notice] 28#28: gracefully shutting down
+2022/12/14 10:59:18 [notice] 31#31: gracefully shutting down
+2022/12/14 10:59:18 [notice] 25#25: gracefully shutting down
+2022/12/14 10:59:18 [notice] 27#27: gracefully shutting down
+2022/12/14 10:59:18 [notice] 27#27: exiting
+2022/12/14 10:59:18 [notice] 26#26: gracefully shutting down
+2022/12/14 10:59:18 [notice] 30#30: gracefully shutting down
+2022/12/14 10:59:18 [notice] 30#30: exiting
+2022/12/14 10:59:18 [notice] 20#20: exiting
+2022/12/14 10:59:18 [notice] 24#24: exiting
+2022/12/14 10:59:18 [notice] 24#24: exit
+2022/12/14 10:59:18 [notice] 22#22: exiting
+2022/12/14 10:59:18 [notice] 21#21: exiting
+2022/12/14 10:59:18 [notice] 23#23: exiting
+2022/12/14 10:59:18 [notice] 29#29: exiting
+2022/12/14 10:59:18 [notice] 28#28: exiting
+2022/12/14 10:59:18 [notice] 31#31: exiting
+2022/12/14 10:59:18 [notice] 25#25: exiting
+2022/12/14 10:59:18 [notice] 27#27: exit
+2022/12/14 10:59:18 [notice] 26#26: exiting
+2022/12/14 10:59:18 [notice] 26#26: exit
+2022/12/14 10:59:18 [notice] 30#30: exit
+2022/12/14 10:59:18 [notice] 20#20: exit
+2022/12/14 10:59:18 [notice] 22#22: exit
+2022/12/14 10:59:18 [notice] 21#21: exit
+2022/12/14 10:59:18 [notice] 23#23: exit
+2022/12/14 10:59:18 [notice] 29#29: exit
+2022/12/14 10:59:18 [notice] 28#28: exit
+2022/12/14 10:59:18 [notice] 31#31: exit
+2022/12/14 10:59:18 [notice] 25#25: exit
+2022/12/14 10:59:18 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2022/12/14 10:59:18 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:59:18 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/12/14 10:59:18 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/12/14 10:59:18 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 10:59:18 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/12/14 10:59:18 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 10:59:18 [notice] 1#1: exit
+2022/12/14 10:59:30 [notice] 1#1: using the "epoll" event method
+2022/12/14 10:59:30 [notice] 1#1: nginx/1.23.3
+2022/12/14 10:59:30 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 10:59:30 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 10:59:30 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 10:59:30 [notice] 1#1: start worker processes
+2022/12/14 10:59:30 [notice] 1#1: start worker process 20
+2022/12/14 10:59:30 [notice] 1#1: start worker process 21
+2022/12/14 10:59:30 [notice] 1#1: start worker process 22
+2022/12/14 10:59:30 [notice] 1#1: start worker process 23
+2022/12/14 10:59:30 [notice] 1#1: start worker process 24
+2022/12/14 10:59:30 [notice] 1#1: start worker process 25
+2022/12/14 10:59:30 [notice] 1#1: start worker process 26
+2022/12/14 10:59:30 [notice] 1#1: start worker process 27
+2022/12/14 10:59:30 [notice] 1#1: start worker process 28
+2022/12/14 10:59:30 [notice] 1#1: start worker process 29
+2022/12/14 10:59:30 [notice] 1#1: start worker process 30
+2022/12/14 10:59:30 [notice] 1#1: start worker process 31
+2022/12/14 10:59:37 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:59:37 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:59:37 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:59:37 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 10:59:37 [error] 20#20: *1 no live upstreams while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "http://carshare/favicon.ico", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:00:02 [error] 23#23: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:00:02 [warn] 23#23: *4 upstream server temporarily disabled while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:00:02 [error] 23#23: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:00:02 [warn] 23#23: *4 upstream server temporarily disabled while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:00:02 [error] 23#23: *4 no live upstreams while connecting to upstream, client: 172.27.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "http://carshare/favicon.ico", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:01:19 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:01:19 [notice] 20#20: gracefully shutting down
+2022/12/14 11:01:19 [notice] 30#30: gracefully shutting down
+2022/12/14 11:01:19 [notice] 21#21: gracefully shutting down
+2022/12/14 11:01:19 [notice] 22#22: gracefully shutting down
+2022/12/14 11:01:19 [notice] 24#24: gracefully shutting down
+2022/12/14 11:01:19 [notice] 24#24: exiting
+2022/12/14 11:01:19 [notice] 25#25: gracefully shutting down
+2022/12/14 11:01:19 [notice] 26#26: gracefully shutting down
+2022/12/14 11:01:19 [notice] 26#26: exiting
+2022/12/14 11:01:19 [notice] 23#23: gracefully shutting down
+2022/12/14 11:01:19 [notice] 28#28: gracefully shutting down
+2022/12/14 11:01:19 [notice] 29#29: gracefully shutting down
+2022/12/14 11:01:19 [notice] 27#27: gracefully shutting down
+2022/12/14 11:01:19 [notice] 31#31: gracefully shutting down
+2022/12/14 11:01:19 [notice] 20#20: exiting
+2022/12/14 11:01:19 [notice] 30#30: exiting
+2022/12/14 11:01:19 [notice] 21#21: exiting
+2022/12/14 11:01:19 [notice] 21#21: exit
+2022/12/14 11:01:19 [notice] 22#22: exiting
+2022/12/14 11:01:19 [notice] 24#24: exit
+2022/12/14 11:01:19 [notice] 25#25: exiting
+2022/12/14 11:01:19 [notice] 26#26: exit
+2022/12/14 11:01:19 [notice] 23#23: exiting
+2022/12/14 11:01:19 [notice] 28#28: exiting
+2022/12/14 11:01:19 [notice] 29#29: exiting
+2022/12/14 11:01:19 [notice] 27#27: exiting
+2022/12/14 11:01:19 [notice] 31#31: exiting
+2022/12/14 11:01:19 [notice] 20#20: exit
+2022/12/14 11:01:19 [notice] 30#30: exit
+2022/12/14 11:01:19 [notice] 22#22: exit
+2022/12/14 11:01:19 [notice] 25#25: exit
+2022/12/14 11:01:19 [notice] 23#23: exit
+2022/12/14 11:01:19 [notice] 28#28: exit
+2022/12/14 11:01:19 [notice] 29#29: exit
+2022/12/14 11:01:19 [notice] 27#27: exit
+2022/12/14 11:01:19 [notice] 31#31: exit
+2022/12/14 11:01:19 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/12/14 11:01:19 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:01:19 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/12/14 11:01:19 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 11:01:19 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:01:19 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 11:01:19 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:01:19 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/14 11:01:19 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/12/14 11:01:19 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:01:19 [notice] 1#1: exit
+2022/12/14 11:01:32 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:01:32 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:01:32 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:01:32 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:01:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:01:32 [notice] 1#1: start worker processes
+2022/12/14 11:01:32 [notice] 1#1: start worker process 20
+2022/12/14 11:01:32 [notice] 1#1: start worker process 21
+2022/12/14 11:01:32 [notice] 1#1: start worker process 22
+2022/12/14 11:01:32 [notice] 1#1: start worker process 23
+2022/12/14 11:01:32 [notice] 1#1: start worker process 24
+2022/12/14 11:01:32 [notice] 1#1: start worker process 25
+2022/12/14 11:01:32 [notice] 1#1: start worker process 26
+2022/12/14 11:01:32 [notice] 1#1: start worker process 27
+2022/12/14 11:01:32 [notice] 1#1: start worker process 28
+2022/12/14 11:01:32 [notice] 1#1: start worker process 29
+2022/12/14 11:01:32 [notice] 1#1: start worker process 30
+2022/12/14 11:01:32 [notice] 1#1: start worker process 31
+2022/12/14 11:02:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:02:41 [notice] 20#20: gracefully shutting down
+2022/12/14 11:02:41 [notice] 21#21: gracefully shutting down
+2022/12/14 11:02:41 [notice] 22#22: gracefully shutting down
+2022/12/14 11:02:41 [notice] 23#23: gracefully shutting down
+2022/12/14 11:02:41 [notice] 25#25: gracefully shutting down
+2022/12/14 11:02:41 [notice] 26#26: gracefully shutting down
+2022/12/14 11:02:41 [notice] 27#27: gracefully shutting down
+2022/12/14 11:02:41 [notice] 28#28: gracefully shutting down
+2022/12/14 11:02:41 [notice] 24#24: gracefully shutting down
+2022/12/14 11:02:41 [notice] 29#29: gracefully shutting down
+2022/12/14 11:02:41 [notice] 30#30: gracefully shutting down
+2022/12/14 11:02:41 [notice] 20#20: exiting
+2022/12/14 11:02:41 [notice] 31#31: gracefully shutting down
+2022/12/14 11:02:41 [notice] 22#22: exiting
+2022/12/14 11:02:41 [notice] 21#21: exiting
+2022/12/14 11:02:41 [notice] 25#25: exiting
+2022/12/14 11:02:41 [notice] 23#23: exiting
+2022/12/14 11:02:41 [notice] 26#26: exiting
+2022/12/14 11:02:41 [notice] 27#27: exiting
+2022/12/14 11:02:41 [notice] 28#28: exiting
+2022/12/14 11:02:41 [notice] 24#24: exiting
+2022/12/14 11:02:41 [notice] 29#29: exiting
+2022/12/14 11:02:41 [notice] 30#30: exiting
+2022/12/14 11:02:41 [notice] 20#20: exit
+2022/12/14 11:02:41 [notice] 31#31: exiting
+2022/12/14 11:02:41 [notice] 22#22: exit
+2022/12/14 11:02:41 [notice] 21#21: exit
+2022/12/14 11:02:41 [notice] 25#25: exit
+2022/12/14 11:02:41 [notice] 23#23: exit
+2022/12/14 11:02:41 [notice] 26#26: exit
+2022/12/14 11:02:41 [notice] 27#27: exit
+2022/12/14 11:02:41 [notice] 28#28: exit
+2022/12/14 11:02:41 [notice] 24#24: exit
+2022/12/14 11:02:41 [notice] 29#29: exit
+2022/12/14 11:02:41 [notice] 30#30: exit
+2022/12/14 11:02:41 [notice] 31#31: exit
+2022/12/14 11:02:41 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 11:02:41 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:02:41 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/12/14 11:02:41 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:02:41 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/12/14 11:02:41 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:02:41 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/12/14 11:02:41 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2022/12/14 11:02:41 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:02:41 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 11:02:41 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:02:41 [notice] 1#1: exit
+2022/12/14 11:02:46 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:02:46 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:02:46 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:02:46 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:02:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:02:46 [notice] 1#1: start worker processes
+2022/12/14 11:02:46 [notice] 1#1: start worker process 20
+2022/12/14 11:02:46 [notice] 1#1: start worker process 21
+2022/12/14 11:02:46 [notice] 1#1: start worker process 22
+2022/12/14 11:02:46 [notice] 1#1: start worker process 23
+2022/12/14 11:02:46 [notice] 1#1: start worker process 24
+2022/12/14 11:02:46 [notice] 1#1: start worker process 25
+2022/12/14 11:02:46 [notice] 1#1: start worker process 26
+2022/12/14 11:02:46 [notice] 1#1: start worker process 27
+2022/12/14 11:02:46 [notice] 1#1: start worker process 28
+2022/12/14 11:02:46 [notice] 1#1: start worker process 29
+2022/12/14 11:02:46 [notice] 1#1: start worker process 30
+2022/12/14 11:02:46 [notice] 1#1: start worker process 31
+2022/12/14 11:04:00 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.28.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:04:00 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.28.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:04:00 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.28.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:04:00 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.28.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:04:00 [error] 20#20: *1 no live upstreams while connecting to upstream, client: 172.28.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "http://carshare/favicon.ico", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:04:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:04:58 [notice] 21#21: gracefully shutting down
+2022/12/14 11:04:58 [notice] 22#22: gracefully shutting down
+2022/12/14 11:04:58 [notice] 22#22: exiting
+2022/12/14 11:04:58 [notice] 25#25: gracefully shutting down
+2022/12/14 11:04:58 [notice] 27#27: gracefully shutting down
+2022/12/14 11:04:58 [notice] 28#28: gracefully shutting down
+2022/12/14 11:04:58 [notice] 29#29: gracefully shutting down
+2022/12/14 11:04:58 [notice] 30#30: gracefully shutting down
+2022/12/14 11:04:58 [notice] 31#31: gracefully shutting down
+2022/12/14 11:04:58 [notice] 23#23: gracefully shutting down
+2022/12/14 11:04:58 [notice] 20#20: gracefully shutting down
+2022/12/14 11:04:58 [notice] 24#24: gracefully shutting down
+2022/12/14 11:04:58 [notice] 26#26: gracefully shutting down
+2022/12/14 11:04:58 [notice] 21#21: exiting
+2022/12/14 11:04:58 [notice] 21#21: exit
+2022/12/14 11:04:58 [notice] 22#22: exit
+2022/12/14 11:04:58 [notice] 25#25: exiting
+2022/12/14 11:04:58 [notice] 27#27: exiting
+2022/12/14 11:04:58 [notice] 27#27: exit
+2022/12/14 11:04:58 [notice] 28#28: exiting
+2022/12/14 11:04:58 [notice] 29#29: exiting
+2022/12/14 11:04:58 [notice] 30#30: exiting
+2022/12/14 11:04:58 [notice] 31#31: exiting
+2022/12/14 11:04:58 [notice] 23#23: exiting
+2022/12/14 11:04:58 [notice] 20#20: exiting
+2022/12/14 11:04:58 [notice] 24#24: exiting
+2022/12/14 11:04:58 [notice] 26#26: exiting
+2022/12/14 11:04:58 [notice] 25#25: exit
+2022/12/14 11:04:58 [notice] 28#28: exit
+2022/12/14 11:04:58 [notice] 29#29: exit
+2022/12/14 11:04:58 [notice] 30#30: exit
+2022/12/14 11:04:58 [notice] 31#31: exit
+2022/12/14 11:04:58 [notice] 23#23: exit
+2022/12/14 11:04:58 [notice] 20#20: exit
+2022/12/14 11:04:58 [notice] 24#24: exit
+2022/12/14 11:04:58 [notice] 26#26: exit
+2022/12/14 11:04:58 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/12/14 11:04:58 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:04:58 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/12/14 11:04:58 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2022/12/14 11:04:58 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:04:58 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/12/14 11:04:58 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:04:58 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/12/14 11:04:58 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:04:58 [notice] 1#1: exit
+2022/12/14 11:05:01 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:05:01 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:05:01 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:05:01 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:05:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:05:01 [notice] 1#1: start worker processes
+2022/12/14 11:05:01 [notice] 1#1: start worker process 20
+2022/12/14 11:05:01 [notice] 1#1: start worker process 21
+2022/12/14 11:05:01 [notice] 1#1: start worker process 22
+2022/12/14 11:05:01 [notice] 1#1: start worker process 23
+2022/12/14 11:05:01 [notice] 1#1: start worker process 24
+2022/12/14 11:05:01 [notice] 1#1: start worker process 25
+2022/12/14 11:05:01 [notice] 1#1: start worker process 26
+2022/12/14 11:05:01 [notice] 1#1: start worker process 27
+2022/12/14 11:05:01 [notice] 1#1: start worker process 28
+2022/12/14 11:05:01 [notice] 1#1: start worker process 29
+2022/12/14 11:05:01 [notice] 1#1: start worker process 30
+2022/12/14 11:05:01 [notice] 1#1: start worker process 31
+2022/12/14 11:05:07 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.28.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:05:07 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.28.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:05:07 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.28.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:05:07 [warn] 20#20: *1 upstream server temporarily disabled while connecting to upstream, client: 172.28.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost:81"
+2022/12/14 11:07:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:07:53 [notice] 20#20: gracefully shutting down
+2022/12/14 11:07:53 [notice] 21#21: gracefully shutting down
+2022/12/14 11:07:53 [notice] 23#23: gracefully shutting down
+2022/12/14 11:07:53 [notice] 24#24: gracefully shutting down
+2022/12/14 11:07:53 [notice] 27#27: gracefully shutting down
+2022/12/14 11:07:53 [notice] 28#28: gracefully shutting down
+2022/12/14 11:07:53 [notice] 22#22: gracefully shutting down
+2022/12/14 11:07:53 [notice] 31#31: gracefully shutting down
+2022/12/14 11:07:53 [notice] 30#30: gracefully shutting down
+2022/12/14 11:07:53 [notice] 25#25: gracefully shutting down
+2022/12/14 11:07:53 [notice] 26#26: gracefully shutting down
+2022/12/14 11:07:53 [notice] 29#29: gracefully shutting down
+2022/12/14 11:07:53 [notice] 26#26: exiting
+2022/12/14 11:07:53 [notice] 20#20: exiting
+2022/12/14 11:07:53 [notice] 21#21: exiting
+2022/12/14 11:07:53 [notice] 23#23: exiting
+2022/12/14 11:07:53 [notice] 24#24: exiting
+2022/12/14 11:07:53 [notice] 27#27: exiting
+2022/12/14 11:07:53 [notice] 28#28: exiting
+2022/12/14 11:07:53 [notice] 22#22: exiting
+2022/12/14 11:07:53 [notice] 31#31: exiting
+2022/12/14 11:07:53 [notice] 30#30: exiting
+2022/12/14 11:07:53 [notice] 25#25: exiting
+2022/12/14 11:07:53 [notice] 29#29: exiting
+2022/12/14 11:07:53 [notice] 26#26: exit
+2022/12/14 11:07:53 [notice] 20#20: exit
+2022/12/14 11:07:53 [notice] 23#23: exit
+2022/12/14 11:07:53 [notice] 21#21: exit
+2022/12/14 11:07:53 [notice] 24#24: exit
+2022/12/14 11:07:53 [notice] 27#27: exit
+2022/12/14 11:07:53 [notice] 22#22: exit
+2022/12/14 11:07:53 [notice] 28#28: exit
+2022/12/14 11:07:53 [notice] 31#31: exit
+2022/12/14 11:07:53 [notice] 30#30: exit
+2022/12/14 11:07:53 [notice] 25#25: exit
+2022/12/14 11:07:53 [notice] 29#29: exit
+2022/12/14 11:07:53 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/12/14 11:07:53 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:07:53 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/12/14 11:07:53 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2022/12/14 11:07:53 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:07:53 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/12/14 11:07:53 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 11:07:53 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:07:53 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/12/14 11:07:53 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:07:53 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/12/14 11:07:53 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:07:53 [notice] 1#1: exit
+2022/12/14 11:07:56 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:07:56 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:07:56 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:07:56 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:07:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:07:56 [notice] 1#1: start worker processes
+2022/12/14 11:07:56 [notice] 1#1: start worker process 21
+2022/12/14 11:07:56 [notice] 1#1: start worker process 22
+2022/12/14 11:07:56 [notice] 1#1: start worker process 23
+2022/12/14 11:07:56 [notice] 1#1: start worker process 24
+2022/12/14 11:07:56 [notice] 1#1: start worker process 25
+2022/12/14 11:07:56 [notice] 1#1: start worker process 26
+2022/12/14 11:07:56 [notice] 1#1: start worker process 27
+2022/12/14 11:07:56 [notice] 1#1: start worker process 28
+2022/12/14 11:07:56 [notice] 1#1: start worker process 29
+2022/12/14 11:07:56 [notice] 1#1: start worker process 30
+2022/12/14 11:07:56 [notice] 1#1: start worker process 31
+2022/12/14 11:07:56 [notice] 1#1: start worker process 32
+2022/12/14 11:09:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:09:13 [notice] 21#21: gracefully shutting down
+2022/12/14 11:09:13 [notice] 22#22: gracefully shutting down
+2022/12/14 11:09:13 [notice] 23#23: gracefully shutting down
+2022/12/14 11:09:13 [notice] 24#24: gracefully shutting down
+2022/12/14 11:09:13 [notice] 26#26: gracefully shutting down
+2022/12/14 11:09:13 [notice] 26#26: exiting
+2022/12/14 11:09:13 [notice] 25#25: gracefully shutting down
+2022/12/14 11:09:13 [notice] 27#27: gracefully shutting down
+2022/12/14 11:09:13 [notice] 27#27: exiting
+2022/12/14 11:09:13 [notice] 28#28: gracefully shutting down
+2022/12/14 11:09:13 [notice] 28#28: exiting
+2022/12/14 11:09:13 [notice] 29#29: gracefully shutting down
+2022/12/14 11:09:13 [notice] 29#29: exiting
+2022/12/14 11:09:13 [notice] 31#31: gracefully shutting down
+2022/12/14 11:09:13 [notice] 32#32: gracefully shutting down
+2022/12/14 11:09:13 [notice] 30#30: gracefully shutting down
+2022/12/14 11:09:13 [notice] 21#21: exiting
+2022/12/14 11:09:13 [notice] 22#22: exiting
+2022/12/14 11:09:13 [notice] 23#23: exiting
+2022/12/14 11:09:13 [notice] 24#24: exiting
+2022/12/14 11:09:13 [notice] 26#26: exit
+2022/12/14 11:09:13 [notice] 25#25: exiting
+2022/12/14 11:09:13 [notice] 25#25: exit
+2022/12/14 11:09:13 [notice] 27#27: exit
+2022/12/14 11:09:13 [notice] 28#28: exit
+2022/12/14 11:09:13 [notice] 29#29: exit
+2022/12/14 11:09:13 [notice] 31#31: exiting
+2022/12/14 11:09:13 [notice] 32#32: exiting
+2022/12/14 11:09:13 [notice] 30#30: exiting
+2022/12/14 11:09:13 [notice] 21#21: exit
+2022/12/14 11:09:13 [notice] 22#22: exit
+2022/12/14 11:09:13 [notice] 23#23: exit
+2022/12/14 11:09:13 [notice] 24#24: exit
+2022/12/14 11:09:13 [notice] 31#31: exit
+2022/12/14 11:09:13 [notice] 32#32: exit
+2022/12/14 11:09:13 [notice] 30#30: exit
+2022/12/14 11:09:13 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 11:09:13 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: worker process 32 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:09:13 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/12/14 11:09:13 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/12/14 11:09:13 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:09:13 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:09:13 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/12/14 11:09:14 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 11:09:14 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:09:14 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:09:14 [notice] 1#1: exit
+2022/12/14 11:13:40 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:13:40 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:13:40 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:13:40 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:13:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:13:40 [notice] 1#1: start worker processes
+2022/12/14 11:13:40 [notice] 1#1: start worker process 19
+2022/12/14 11:13:40 [notice] 1#1: start worker process 20
+2022/12/14 11:13:40 [notice] 1#1: start worker process 21
+2022/12/14 11:13:40 [notice] 1#1: start worker process 22
+2022/12/14 11:13:40 [notice] 1#1: start worker process 23
+2022/12/14 11:13:40 [notice] 1#1: start worker process 24
+2022/12/14 11:13:40 [notice] 1#1: start worker process 25
+2022/12/14 11:13:40 [notice] 1#1: start worker process 26
+2022/12/14 11:13:40 [notice] 1#1: start worker process 27
+2022/12/14 11:13:40 [notice] 1#1: start worker process 28
+2022/12/14 11:13:40 [notice] 1#1: start worker process 29
+2022/12/14 11:13:40 [notice] 1#1: start worker process 30
+2022/12/14 11:13:53 [error] 19#19: *1 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 20#20: *3 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 21#21: *4 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 22#22: *5 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 19#19: *1 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 20#20: *3 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 22#22: *7 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 21#21: *4 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 19#19: *1 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 20#20: *3 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 22#22: *6 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 22#22: *5 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 22#22: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 20#20: *3 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 21#21: *4 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:53 [error] 19#19: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 19#19: *1 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 22#22: *6 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 21#21: *4 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 20#20: *3 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 19#19: *1 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 22#22: *5 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 21#21: *4 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 20#20: *3 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 19#19: *1 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 22#22: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 21#21: *4 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 22#22: *6 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 22#22: *5 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 22#22: *6 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 19#19: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 20#20: *3 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:55 [error] 19#19: *1 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 22#22: *7 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 21#21: *4 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 20#20: *3 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 22#22: *5 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 19#19: *1 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 21#21: *4 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 20#20: *3 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 22#22: *6 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 19#19: *1 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 22#22: *7 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 22#22: *5 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 22#22: *6 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 19#19: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 20#20: *3 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:55 [error] 19#19: *1 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:13:56 [error] 19#19: *1 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 21#21: *4 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 20#20: *3 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 22#22: *7 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 19#19: *1 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 22#22: *6 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 20#20: *3 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 21#21: *4 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 22#22: *5 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 19#19: *1 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 20#20: *3 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 21#21: *4 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 22#22: *7 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 19#19: *1 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 19#19: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 22#22: *6 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 21#21: *4 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:56 [error] 22#22: *5 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/create/"
+2022/12/14 11:13:57 [error] 19#19: *1 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 20#20: *3 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 22#22: *7 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 19#19: *1 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 21#21: *4 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 22#22: *6 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 20#20: *3 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 19#19: *1 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 21#21: *4 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 20#20: *3 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 22#22: *5 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 22#22: *7 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 22#22: *6 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 19#19: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 21#21: *4 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:13:57 [error] 20#20: *3 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 19#19: *1 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 21#21: *4 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 22#22: *7 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 20#20: *3 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 19#19: *1 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 22#22: *5 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 21#21: *4 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 22#22: *6 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 20#20: *3 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 19#19: *1 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 22#22: *7 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 22#22: *6 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 22#22: *5 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 21#21: *4 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 19#19: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 20#20: *3 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:14:52 [error] 22#22: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 19#19: *1 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 19#19: *1 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 22#22: *6 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 21#21: *4 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 22#22: *5 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 19#19: *1 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 20#20: *3 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 19#19: *1 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 19#19: *1 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 22#22: *7 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 22#22: *6 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 21#21: *4 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 19#19: *1 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 22#22: *5 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 19#19: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 20#20: *3 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 19#19: *1 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:15:35 [error] 19#19: *1 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:17:02 [error] 28#28: *29 connect() failed (113: No route to host) while connecting to upstream, client: 172.29.0.1, server: localhost, request: "GET /transports/create/ HTTP/1.1", upstream: "http://172.29.0.4:8000/transports/create/", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:17:44 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:17:44 [notice] 19#19: gracefully shutting down
+2022/12/14 11:17:44 [notice] 20#20: gracefully shutting down
+2022/12/14 11:17:44 [notice] 21#21: gracefully shutting down
+2022/12/14 11:17:44 [notice] 22#22: gracefully shutting down
+2022/12/14 11:17:44 [notice] 23#23: gracefully shutting down
+2022/12/14 11:17:44 [notice] 25#25: gracefully shutting down
+2022/12/14 11:17:44 [notice] 24#24: gracefully shutting down
+2022/12/14 11:17:44 [notice] 26#26: gracefully shutting down
+2022/12/14 11:17:44 [notice] 26#26: exiting
+2022/12/14 11:17:44 [notice] 30#30: gracefully shutting down
+2022/12/14 11:17:44 [notice] 30#30: exiting
+2022/12/14 11:17:44 [notice] 27#27: gracefully shutting down
+2022/12/14 11:17:44 [notice] 27#27: exiting
+2022/12/14 11:17:44 [notice] 28#28: gracefully shutting down
+2022/12/14 11:17:44 [notice] 27#27: exit
+2022/12/14 11:17:44 [notice] 29#29: gracefully shutting down
+2022/12/14 11:17:44 [notice] 19#19: exiting
+2022/12/14 11:17:44 [notice] 20#20: exiting
+2022/12/14 11:17:44 [notice] 21#21: exiting
+2022/12/14 11:17:44 [notice] 22#22: exiting
+2022/12/14 11:17:44 [notice] 23#23: exiting
+2022/12/14 11:17:44 [notice] 22#22: exit
+2022/12/14 11:17:44 [notice] 25#25: exiting
+2022/12/14 11:17:44 [notice] 24#24: exiting
+2022/12/14 11:17:44 [notice] 26#26: exit
+2022/12/14 11:17:44 [notice] 30#30: exit
+2022/12/14 11:17:44 [notice] 28#28: exiting
+2022/12/14 11:17:44 [notice] 29#29: exiting
+2022/12/14 11:17:44 [notice] 19#19: exit
+2022/12/14 11:17:44 [notice] 21#21: exit
+2022/12/14 11:17:44 [notice] 20#20: exit
+2022/12/14 11:17:44 [notice] 23#23: exit
+2022/12/14 11:17:44 [notice] 24#24: exit
+2022/12/14 11:17:44 [notice] 25#25: exit
+2022/12/14 11:17:44 [notice] 28#28: exit
+2022/12/14 11:17:44 [notice] 29#29: exit
+2022/12/14 11:17:44 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 11:17:44 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:17:44 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/12/14 11:17:44 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:17:44 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/12/14 11:17:44 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:17:44 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/12/14 11:17:44 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2022/12/14 11:17:44 [notice] 1#1: worker process 19 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:17:44 [notice] 1#1: exit
+2022/12/14 11:17:48 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:17:48 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:17:48 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:17:48 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:17:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:17:48 [notice] 1#1: start worker processes
+2022/12/14 11:17:48 [notice] 1#1: start worker process 20
+2022/12/14 11:17:48 [notice] 1#1: start worker process 21
+2022/12/14 11:17:48 [notice] 1#1: start worker process 22
+2022/12/14 11:17:48 [notice] 1#1: start worker process 23
+2022/12/14 11:17:48 [notice] 1#1: start worker process 24
+2022/12/14 11:17:48 [notice] 1#1: start worker process 25
+2022/12/14 11:17:48 [notice] 1#1: start worker process 26
+2022/12/14 11:17:48 [notice] 1#1: start worker process 27
+2022/12/14 11:17:48 [notice] 1#1: start worker process 28
+2022/12/14 11:17:48 [notice] 1#1: start worker process 29
+2022/12/14 11:17:48 [notice] 1#1: start worker process 30
+2022/12/14 11:17:48 [notice] 1#1: start worker process 31
+2022/12/14 11:19:56 [error] 20#20: *1 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:56 [error] 20#20: *1 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:56 [error] 21#21: *3 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:56 [error] 20#20: *1 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:56 [error] 22#22: *4 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:56 [error] 21#21: *3 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:56 [error] 22#22: *6 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 20#20: *1 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 22#22: *5 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 21#21: *3 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 20#20: *1 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 22#22: *7 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 22#22: *4 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 21#21: *3 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 20#20: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 22#22: *5 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:19:57 [error] 22#22: *6 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *7 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 21#21: *3 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *4 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *5 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 21#21: *3 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *6 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 23#23: *10 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 21#21: *3 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *7 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 23#23: *10 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *4 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *5 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *6 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *7 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 21#21: *3 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 23#23: *10 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *7 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:18 [error] 22#22: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *6 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 23#23: *10 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 21#21: *3 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *5 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *4 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 23#23: *10 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *7 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *6 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *7 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 21#21: *3 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *5 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 23#23: *10 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 21#21: *3 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *7 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *6 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *4 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:20:19 [error] 22#22: *5 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 23#23: *10 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 21#21: *3 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *7 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 23#23: *10 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *4 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 21#21: *3 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *6 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 23#23: *10 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *5 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 21#21: *3 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *7 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *4 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *7 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 23#23: *10 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *6 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *5 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:19 [error] 22#22: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *7 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 23#23: *10 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 21#21: *3 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *6 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 21#21: *3 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 23#23: *10 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *5 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *4 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 23#23: *10 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 21#21: *3 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *7 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *6 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *5 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *7 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 23#23: *10 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:25 [error] 22#22: *4 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:20:59 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:20:59 [notice] 20#20: gracefully shutting down
+2022/12/14 11:20:59 [notice] 22#22: gracefully shutting down
+2022/12/14 11:20:59 [notice] 24#24: gracefully shutting down
+2022/12/14 11:20:59 [notice] 25#25: gracefully shutting down
+2022/12/14 11:20:59 [notice] 27#27: gracefully shutting down
+2022/12/14 11:20:59 [notice] 30#30: gracefully shutting down
+2022/12/14 11:20:59 [notice] 29#29: gracefully shutting down
+2022/12/14 11:20:59 [notice] 23#23: gracefully shutting down
+2022/12/14 11:20:59 [notice] 26#26: gracefully shutting down
+2022/12/14 11:20:59 [notice] 31#31: gracefully shutting down
+2022/12/14 11:20:59 [notice] 20#20: exiting
+2022/12/14 11:20:59 [notice] 21#21: gracefully shutting down
+2022/12/14 11:20:59 [notice] 20#20: exit
+2022/12/14 11:20:59 [notice] 21#21: exiting
+2022/12/14 11:20:59 [notice] 21#21: exit
+2022/12/14 11:20:59 [notice] 28#28: gracefully shutting down
+2022/12/14 11:20:59 [notice] 22#22: exiting
+2022/12/14 11:20:59 [notice] 24#24: exiting
+2022/12/14 11:20:59 [notice] 25#25: exiting
+2022/12/14 11:20:59 [notice] 27#27: exiting
+2022/12/14 11:20:59 [notice] 30#30: exiting
+2022/12/14 11:20:59 [notice] 29#29: exiting
+2022/12/14 11:20:59 [notice] 23#23: exiting
+2022/12/14 11:20:59 [notice] 23#23: exit
+2022/12/14 11:20:59 [notice] 26#26: exiting
+2022/12/14 11:20:59 [notice] 31#31: exiting
+2022/12/14 11:20:59 [notice] 31#31: exit
+2022/12/14 11:20:59 [notice] 28#28: exiting
+2022/12/14 11:20:59 [notice] 22#22: exit
+2022/12/14 11:20:59 [notice] 24#24: exit
+2022/12/14 11:20:59 [notice] 25#25: exit
+2022/12/14 11:20:59 [notice] 27#27: exit
+2022/12/14 11:20:59 [notice] 30#30: exit
+2022/12/14 11:20:59 [notice] 29#29: exit
+2022/12/14 11:20:59 [notice] 26#26: exit
+2022/12/14 11:20:59 [notice] 28#28: exit
+2022/12/14 11:20:59 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/12/14 11:20:59 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:20:59 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 11:20:59 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:20:59 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/12/14 11:20:59 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/12/14 11:20:59 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:20:59 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2022/12/14 11:20:59 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/14 11:20:59 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:20:59 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/12/14 11:20:59 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:20:59 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/12/14 11:20:59 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 11:20:59 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:20:59 [notice] 1#1: exit
+2022/12/14 11:21:03 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:21:03 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:21:03 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:21:03 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:21:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:21:03 [notice] 1#1: start worker processes
+2022/12/14 11:21:03 [notice] 1#1: start worker process 20
+2022/12/14 11:21:03 [notice] 1#1: start worker process 21
+2022/12/14 11:21:03 [notice] 1#1: start worker process 22
+2022/12/14 11:21:03 [notice] 1#1: start worker process 23
+2022/12/14 11:21:03 [notice] 1#1: start worker process 24
+2022/12/14 11:21:03 [notice] 1#1: start worker process 25
+2022/12/14 11:21:03 [notice] 1#1: start worker process 26
+2022/12/14 11:21:03 [notice] 1#1: start worker process 27
+2022/12/14 11:21:03 [notice] 1#1: start worker process 28
+2022/12/14 11:21:03 [notice] 1#1: start worker process 29
+2022/12/14 11:21:03 [notice] 1#1: start worker process 30
+2022/12/14 11:21:03 [notice] 1#1: start worker process 31
+2022/12/14 11:22:16 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:22:16 [notice] 20#20: gracefully shutting down
+2022/12/14 11:22:16 [notice] 22#22: gracefully shutting down
+2022/12/14 11:22:16 [notice] 23#23: gracefully shutting down
+2022/12/14 11:22:16 [notice] 25#25: gracefully shutting down
+2022/12/14 11:22:16 [notice] 26#26: gracefully shutting down
+2022/12/14 11:22:16 [notice] 21#21: gracefully shutting down
+2022/12/14 11:22:16 [notice] 27#27: gracefully shutting down
+2022/12/14 11:22:16 [notice] 24#24: gracefully shutting down
+2022/12/14 11:22:16 [notice] 28#28: gracefully shutting down
+2022/12/14 11:22:16 [notice] 29#29: gracefully shutting down
+2022/12/14 11:22:16 [notice] 30#30: gracefully shutting down
+2022/12/14 11:22:16 [notice] 31#31: gracefully shutting down
+2022/12/14 11:22:16 [notice] 20#20: exiting
+2022/12/14 11:22:16 [notice] 22#22: exiting
+2022/12/14 11:22:16 [notice] 23#23: exiting
+2022/12/14 11:22:16 [notice] 25#25: exiting
+2022/12/14 11:22:16 [notice] 26#26: exiting
+2022/12/14 11:22:16 [notice] 21#21: exiting
+2022/12/14 11:22:16 [notice] 27#27: exiting
+2022/12/14 11:22:16 [notice] 24#24: exiting
+2022/12/14 11:22:16 [notice] 28#28: exiting
+2022/12/14 11:22:16 [notice] 29#29: exiting
+2022/12/14 11:22:16 [notice] 30#30: exiting
+2022/12/14 11:22:16 [notice] 31#31: exiting
+2022/12/14 11:22:16 [notice] 20#20: exit
+2022/12/14 11:22:16 [notice] 22#22: exit
+2022/12/14 11:22:16 [notice] 23#23: exit
+2022/12/14 11:22:16 [notice] 25#25: exit
+2022/12/14 11:22:16 [notice] 26#26: exit
+2022/12/14 11:22:16 [notice] 21#21: exit
+2022/12/14 11:22:16 [notice] 27#27: exit
+2022/12/14 11:22:16 [notice] 24#24: exit
+2022/12/14 11:22:16 [notice] 28#28: exit
+2022/12/14 11:22:16 [notice] 29#29: exit
+2022/12/14 11:22:16 [notice] 30#30: exit
+2022/12/14 11:22:16 [notice] 31#31: exit
+2022/12/14 11:22:16 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 11:22:16 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:22:16 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:22:17 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/12/14 11:22:17 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:22:17 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 11:22:17 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:22:17 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/12/14 11:22:17 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/12/14 11:22:17 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:22:17 [notice] 1#1: exit
+2022/12/14 11:23:47 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:23:47 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:23:47 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:23:47 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:23:47 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:23:47 [notice] 1#1: start worker processes
+2022/12/14 11:23:47 [notice] 1#1: start worker process 20
+2022/12/14 11:23:47 [notice] 1#1: start worker process 21
+2022/12/14 11:23:47 [notice] 1#1: start worker process 22
+2022/12/14 11:23:47 [notice] 1#1: start worker process 23
+2022/12/14 11:23:47 [notice] 1#1: start worker process 24
+2022/12/14 11:23:47 [notice] 1#1: start worker process 25
+2022/12/14 11:23:47 [notice] 1#1: start worker process 26
+2022/12/14 11:23:47 [notice] 1#1: start worker process 27
+2022/12/14 11:23:47 [notice] 1#1: start worker process 28
+2022/12/14 11:23:47 [notice] 1#1: start worker process 29
+2022/12/14 11:23:47 [notice] 1#1: start worker process 30
+2022/12/14 11:23:47 [notice] 1#1: start worker process 31
+2022/12/14 11:24:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:24:42 [notice] 20#20: gracefully shutting down
+2022/12/14 11:24:42 [notice] 21#21: gracefully shutting down
+2022/12/14 11:24:42 [notice] 22#22: gracefully shutting down
+2022/12/14 11:24:42 [notice] 23#23: gracefully shutting down
+2022/12/14 11:24:42 [notice] 24#24: gracefully shutting down
+2022/12/14 11:24:42 [notice] 24#24: exiting
+2022/12/14 11:24:42 [notice] 25#25: gracefully shutting down
+2022/12/14 11:24:42 [notice] 27#27: gracefully shutting down
+2022/12/14 11:24:42 [notice] 26#26: gracefully shutting down
+2022/12/14 11:24:42 [notice] 28#28: gracefully shutting down
+2022/12/14 11:24:42 [notice] 29#29: gracefully shutting down
+2022/12/14 11:24:42 [notice] 29#29: exiting
+2022/12/14 11:24:42 [notice] 31#31: gracefully shutting down
+2022/12/14 11:24:42 [notice] 30#30: gracefully shutting down
+2022/12/14 11:24:42 [notice] 20#20: exiting
+2022/12/14 11:24:42 [notice] 21#21: exiting
+2022/12/14 11:24:42 [notice] 22#22: exiting
+2022/12/14 11:24:42 [notice] 23#23: exiting
+2022/12/14 11:24:42 [notice] 24#24: exit
+2022/12/14 11:24:42 [notice] 25#25: exiting
+2022/12/14 11:24:42 [notice] 27#27: exiting
+2022/12/14 11:24:42 [notice] 26#26: exiting
+2022/12/14 11:24:42 [notice] 28#28: exiting
+2022/12/14 11:24:42 [notice] 29#29: exit
+2022/12/14 11:24:42 [notice] 31#31: exiting
+2022/12/14 11:24:42 [notice] 30#30: exiting
+2022/12/14 11:24:42 [notice] 20#20: exit
+2022/12/14 11:24:42 [notice] 21#21: exit
+2022/12/14 11:24:42 [notice] 22#22: exit
+2022/12/14 11:24:42 [notice] 23#23: exit
+2022/12/14 11:24:42 [notice] 25#25: exit
+2022/12/14 11:24:42 [notice] 27#27: exit
+2022/12/14 11:24:42 [notice] 26#26: exit
+2022/12/14 11:24:42 [notice] 28#28: exit
+2022/12/14 11:24:42 [notice] 30#30: exit
+2022/12/14 11:24:42 [notice] 31#31: exit
+2022/12/14 11:24:42 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 11:24:42 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:24:42 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/12/14 11:24:42 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/12/14 11:24:42 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:24:42 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/14 11:24:42 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:24:42 [notice] 1#1: exit
+2022/12/14 11:24:48 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:24:48 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:24:48 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:24:48 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:24:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:24:48 [notice] 1#1: start worker processes
+2022/12/14 11:24:48 [notice] 1#1: start worker process 20
+2022/12/14 11:24:48 [notice] 1#1: start worker process 21
+2022/12/14 11:24:48 [notice] 1#1: start worker process 22
+2022/12/14 11:24:48 [notice] 1#1: start worker process 23
+2022/12/14 11:24:48 [notice] 1#1: start worker process 24
+2022/12/14 11:24:48 [notice] 1#1: start worker process 25
+2022/12/14 11:24:48 [notice] 1#1: start worker process 26
+2022/12/14 11:24:48 [notice] 1#1: start worker process 27
+2022/12/14 11:24:48 [notice] 1#1: start worker process 28
+2022/12/14 11:24:48 [notice] 1#1: start worker process 29
+2022/12/14 11:24:48 [notice] 1#1: start worker process 30
+2022/12/14 11:24:48 [notice] 1#1: start worker process 31
+2022/12/14 11:24:51 [error] 20#20: *1 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 25#25: *6 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 23#23: *7 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 20#20: *1 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 22#22: *3 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 25#25: *4 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 20#20: *1 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 23#23: *7 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 22#22: *5 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 25#25: *6 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 22#22: *3 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 25#25: *4 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 20#20: *1 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 23#23: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 20#20: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 25#25: *4 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:24:52 [error] 25#25: *6 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:04 [error] 22#22: *3 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 23#23: *7 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 25#25: *6 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 22#22: *5 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 25#25: *4 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 23#23: *7 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 24#24: *11 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 22#22: *3 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 25#25: *4 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 22#22: *5 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 23#23: *7 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 25#25: *6 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 24#24: *11 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 22#22: *3 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 22#22: *3 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 25#25: *4 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 22#22: *5 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:04 [error] 22#22: *3 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/?next=/transports/all/"
+2022/12/14 11:25:05 [error] 23#23: *7 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 25#25: *6 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 24#24: *11 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 23#23: *7 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 25#25: *6 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 22#22: *5 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 25#25: *4 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 26#26: *14 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 24#24: *11 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 25#25: *6 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 22#22: *5 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 23#23: *7 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 25#25: *4 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 23#23: *7 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 25#25: *6 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 26#26: *14 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 24#24: *11 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:05 [error] 23#23: *7 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:17 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:25:17 [notice] 20#20: gracefully shutting down
+2022/12/14 11:25:17 [notice] 22#22: gracefully shutting down
+2022/12/14 11:25:17 [notice] 21#21: gracefully shutting down
+2022/12/14 11:25:17 [notice] 23#23: gracefully shutting down
+2022/12/14 11:25:17 [notice] 25#25: gracefully shutting down
+2022/12/14 11:25:17 [notice] 24#24: gracefully shutting down
+2022/12/14 11:25:17 [notice] 28#28: gracefully shutting down
+2022/12/14 11:25:17 [notice] 26#26: gracefully shutting down
+2022/12/14 11:25:17 [notice] 29#29: gracefully shutting down
+2022/12/14 11:25:17 [notice] 27#27: gracefully shutting down
+2022/12/14 11:25:17 [notice] 30#30: gracefully shutting down
+2022/12/14 11:25:17 [notice] 31#31: gracefully shutting down
+2022/12/14 11:25:17 [notice] 20#20: exiting
+2022/12/14 11:25:17 [notice] 22#22: exiting
+2022/12/14 11:25:17 [notice] 21#21: exiting
+2022/12/14 11:25:17 [notice] 23#23: exiting
+2022/12/14 11:25:17 [notice] 25#25: exiting
+2022/12/14 11:25:17 [notice] 24#24: exiting
+2022/12/14 11:25:17 [notice] 28#28: exiting
+2022/12/14 11:25:17 [notice] 26#26: exiting
+2022/12/14 11:25:17 [notice] 29#29: exiting
+2022/12/14 11:25:17 [notice] 27#27: exiting
+2022/12/14 11:25:17 [notice] 30#30: exiting
+2022/12/14 11:25:17 [notice] 31#31: exiting
+2022/12/14 11:25:17 [notice] 20#20: exit
+2022/12/14 11:25:17 [notice] 22#22: exit
+2022/12/14 11:25:17 [notice] 21#21: exit
+2022/12/14 11:25:17 [notice] 23#23: exit
+2022/12/14 11:25:17 [notice] 25#25: exit
+2022/12/14 11:25:17 [notice] 24#24: exit
+2022/12/14 11:25:17 [notice] 28#28: exit
+2022/12/14 11:25:17 [notice] 26#26: exit
+2022/12/14 11:25:17 [notice] 29#29: exit
+2022/12/14 11:25:17 [notice] 27#27: exit
+2022/12/14 11:25:17 [notice] 30#30: exit
+2022/12/14 11:25:17 [notice] 31#31: exit
+2022/12/14 11:25:17 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/12/14 11:25:17 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:25:17 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2022/12/14 11:25:17 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:25:17 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/12/14 11:25:17 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:25:17 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/12/14 11:25:17 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:25:17 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/12/14 11:25:17 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:25:17 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 11:25:17 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:25:17 [notice] 1#1: exit
+2022/12/14 11:25:25 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:25:25 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:25:25 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:25:25 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:25:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:25:25 [notice] 1#1: start worker processes
+2022/12/14 11:25:25 [notice] 1#1: start worker process 20
+2022/12/14 11:25:25 [notice] 1#1: start worker process 21
+2022/12/14 11:25:25 [notice] 1#1: start worker process 22
+2022/12/14 11:25:25 [notice] 1#1: start worker process 23
+2022/12/14 11:25:25 [notice] 1#1: start worker process 24
+2022/12/14 11:25:25 [notice] 1#1: start worker process 25
+2022/12/14 11:25:25 [notice] 1#1: start worker process 26
+2022/12/14 11:25:25 [notice] 1#1: start worker process 27
+2022/12/14 11:25:25 [notice] 1#1: start worker process 28
+2022/12/14 11:25:25 [notice] 1#1: start worker process 29
+2022/12/14 11:25:25 [notice] 1#1: start worker process 30
+2022/12/14 11:25:25 [notice] 1#1: start worker process 31
+2022/12/14 11:25:29 [error] 20#20: *1 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 21#21: *3 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 22#22: *4 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 20#20: *1 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 21#21: *3 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 23#23: *5 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 22#22: *4 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 24#24: *7 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 25#25: *6 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 20#20: *1 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 22#22: *4 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 25#25: *6 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 21#21: *3 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 24#24: *7 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 23#23: *5 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:29 [error] 20#20: *1 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 25#25: *6 open() "/home/app/web/staticfilesstyle.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/style.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 22#22: *4 open() "/home/app/web/staticfilescss/bootstrap.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/bootstrap.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 21#21: *3 open() "/home/app/web/staticfilescss/swiper.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/swiper.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 24#24: *7 open() "/home/app/web/staticfilescss/dark.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/dark.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 23#23: *5 open() "/home/app/web/staticfilescss/font-icons.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/font-icons.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 22#22: *4 open() "/home/app/web/staticfilesstyles.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/styles.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 26#26: *10 open() "/home/app/web/staticfilescss/animate.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/animate.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 25#25: *6 open() "/home/app/web/staticfilescss/magnific-popup.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/magnific-popup.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 21#21: *3 open() "/home/app/web/staticfilesjs-custom/src/searchView.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js-custom/src/searchView.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 24#24: *7 open() "/home/app/web/staticfilescss/custom.css" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/css/custom.css HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 23#23: *5 open() "/home/app/web/staticfilesjs/jquery.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/jquery.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 22#22: *4 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 26#26: *10 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 22#22: *4 open() "/home/app/web/staticfilesjs/plugins.min.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/plugins.min.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 25#25: *6 open() "/home/app/web/staticfilesimages/slider/swiper/9.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/slider/swiper/9.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 22#22: *4 open() "/home/app/web/staticfilesimages/magazine/13.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/13.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 21#21: *3 open() "/home/app/web/staticfilesimages/magazine/1.jpg" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/images/magazine/1.jpg HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:25:52 [error] 23#23: *5 open() "/home/app/web/staticfilesjs/functions.js" failed (2: No such file or directory), client: 172.29.0.1, server: localhost, request: "GET /static/js/functions.js HTTP/1.1", host: "localhost:81", referrer: "http://localhost:81/"
+2022/12/14 11:30:04 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:30:04 [notice] 20#20: gracefully shutting down
+2022/12/14 11:30:04 [notice] 21#21: gracefully shutting down
+2022/12/14 11:30:04 [notice] 22#22: gracefully shutting down
+2022/12/14 11:30:04 [notice] 23#23: gracefully shutting down
+2022/12/14 11:30:04 [notice] 25#25: gracefully shutting down
+2022/12/14 11:30:04 [notice] 23#23: exiting
+2022/12/14 11:30:04 [notice] 26#26: gracefully shutting down
+2022/12/14 11:30:04 [notice] 28#28: gracefully shutting down
+2022/12/14 11:30:04 [notice] 30#30: gracefully shutting down
+2022/12/14 11:30:04 [notice] 29#29: gracefully shutting down
+2022/12/14 11:30:04 [notice] 24#24: gracefully shutting down
+2022/12/14 11:30:04 [notice] 27#27: gracefully shutting down
+2022/12/14 11:30:04 [notice] 31#31: gracefully shutting down
+2022/12/14 11:30:04 [notice] 20#20: exiting
+2022/12/14 11:30:04 [notice] 21#21: exiting
+2022/12/14 11:30:04 [notice] 22#22: exiting
+2022/12/14 11:30:04 [notice] 25#25: exiting
+2022/12/14 11:30:04 [notice] 23#23: exit
+2022/12/14 11:30:04 [notice] 26#26: exiting
+2022/12/14 11:30:04 [notice] 28#28: exiting
+2022/12/14 11:30:04 [notice] 30#30: exiting
+2022/12/14 11:30:04 [notice] 29#29: exiting
+2022/12/14 11:30:04 [notice] 24#24: exiting
+2022/12/14 11:30:04 [notice] 27#27: exiting
+2022/12/14 11:30:04 [notice] 31#31: exiting
+2022/12/14 11:30:04 [notice] 20#20: exit
+2022/12/14 11:30:04 [notice] 21#21: exit
+2022/12/14 11:30:04 [notice] 22#22: exit
+2022/12/14 11:30:04 [notice] 25#25: exit
+2022/12/14 11:30:04 [notice] 26#26: exit
+2022/12/14 11:30:04 [notice] 28#28: exit
+2022/12/14 11:30:04 [notice] 30#30: exit
+2022/12/14 11:30:04 [notice] 29#29: exit
+2022/12/14 11:30:04 [notice] 24#24: exit
+2022/12/14 11:30:04 [notice] 27#27: exit
+2022/12/14 11:30:04 [notice] 31#31: exit
+2022/12/14 11:30:05 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2022/12/14 11:30:05 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:30:05 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/12/14 11:30:05 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:30:05 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/12/14 11:30:05 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:30:05 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 11:30:05 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/12/14 11:30:05 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:30:05 [notice] 1#1: exit
+2022/12/14 11:30:30 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:30:30 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:30:30 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:30:30 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:30:30 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:30:30 [notice] 1#1: start worker processes
+2022/12/14 11:30:30 [notice] 1#1: start worker process 20
+2022/12/14 11:30:30 [notice] 1#1: start worker process 21
+2022/12/14 11:30:30 [notice] 1#1: start worker process 22
+2022/12/14 11:30:30 [notice] 1#1: start worker process 23
+2022/12/14 11:30:30 [notice] 1#1: start worker process 24
+2022/12/14 11:30:30 [notice] 1#1: start worker process 25
+2022/12/14 11:30:30 [notice] 1#1: start worker process 26
+2022/12/14 11:30:30 [notice] 1#1: start worker process 27
+2022/12/14 11:30:30 [notice] 1#1: start worker process 28
+2022/12/14 11:30:30 [notice] 1#1: start worker process 29
+2022/12/14 11:30:30 [notice] 1#1: start worker process 30
+2022/12/14 11:30:30 [notice] 1#1: start worker process 31
+2022/12/14 11:32:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:32:29 [notice] 20#20: gracefully shutting down
+2022/12/14 11:32:29 [notice] 31#31: gracefully shutting down
+2022/12/14 11:32:29 [notice] 21#21: gracefully shutting down
+2022/12/14 11:32:29 [notice] 25#25: gracefully shutting down
+2022/12/14 11:32:29 [notice] 24#24: gracefully shutting down
+2022/12/14 11:32:29 [notice] 26#26: gracefully shutting down
+2022/12/14 11:32:29 [notice] 28#28: gracefully shutting down
+2022/12/14 11:32:29 [notice] 27#27: gracefully shutting down
+2022/12/14 11:32:29 [notice] 22#22: gracefully shutting down
+2022/12/14 11:32:29 [notice] 23#23: gracefully shutting down
+2022/12/14 11:32:29 [notice] 29#29: gracefully shutting down
+2022/12/14 11:32:29 [notice] 30#30: gracefully shutting down
+2022/12/14 11:32:29 [notice] 31#31: exiting
+2022/12/14 11:32:29 [notice] 20#20: exiting
+2022/12/14 11:32:29 [notice] 21#21: exiting
+2022/12/14 11:32:29 [notice] 25#25: exiting
+2022/12/14 11:32:29 [notice] 24#24: exiting
+2022/12/14 11:32:29 [notice] 26#26: exiting
+2022/12/14 11:32:29 [notice] 28#28: exiting
+2022/12/14 11:32:29 [notice] 27#27: exiting
+2022/12/14 11:32:29 [notice] 22#22: exiting
+2022/12/14 11:32:29 [notice] 23#23: exiting
+2022/12/14 11:32:29 [notice] 29#29: exiting
+2022/12/14 11:32:29 [notice] 30#30: exiting
+2022/12/14 11:32:29 [notice] 31#31: exit
+2022/12/14 11:32:29 [notice] 20#20: exit
+2022/12/14 11:32:29 [notice] 21#21: exit
+2022/12/14 11:32:29 [notice] 25#25: exit
+2022/12/14 11:32:29 [notice] 24#24: exit
+2022/12/14 11:32:29 [notice] 26#26: exit
+2022/12/14 11:32:29 [notice] 28#28: exit
+2022/12/14 11:32:29 [notice] 27#27: exit
+2022/12/14 11:32:29 [notice] 22#22: exit
+2022/12/14 11:32:29 [notice] 23#23: exit
+2022/12/14 11:32:29 [notice] 29#29: exit
+2022/12/14 11:32:29 [notice] 30#30: exit
+2022/12/14 11:32:29 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/12/14 11:32:29 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:32:29 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/14 11:32:29 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/12/14 11:32:29 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:32:29 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2022/12/14 11:32:29 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:32:29 [notice] 1#1: exit
+2022/12/14 11:32:51 [notice] 1#1: using the "epoll" event method
+2022/12/14 11:32:51 [notice] 1#1: nginx/1.23.3
+2022/12/14 11:32:51 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 11:32:51 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 11:32:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 11:32:51 [notice] 1#1: start worker processes
+2022/12/14 11:32:51 [notice] 1#1: start worker process 20
+2022/12/14 11:32:51 [notice] 1#1: start worker process 21
+2022/12/14 11:32:51 [notice] 1#1: start worker process 22
+2022/12/14 11:32:51 [notice] 1#1: start worker process 23
+2022/12/14 11:32:51 [notice] 1#1: start worker process 24
+2022/12/14 11:32:51 [notice] 1#1: start worker process 25
+2022/12/14 11:32:51 [notice] 1#1: start worker process 26
+2022/12/14 11:32:51 [notice] 1#1: start worker process 27
+2022/12/14 11:32:51 [notice] 1#1: start worker process 28
+2022/12/14 11:32:51 [notice] 1#1: start worker process 29
+2022/12/14 11:32:51 [notice] 1#1: start worker process 30
+2022/12/14 11:32:51 [notice] 1#1: start worker process 31
+2022/12/14 11:33:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 11:33:13 [notice] 22#22: gracefully shutting down
+2022/12/14 11:33:13 [notice] 20#20: gracefully shutting down
+2022/12/14 11:33:13 [notice] 25#25: gracefully shutting down
+2022/12/14 11:33:13 [notice] 21#21: gracefully shutting down
+2022/12/14 11:33:13 [notice] 28#28: gracefully shutting down
+2022/12/14 11:33:13 [notice] 21#21: exiting
+2022/12/14 11:33:13 [notice] 24#24: gracefully shutting down
+2022/12/14 11:33:13 [notice] 23#23: gracefully shutting down
+2022/12/14 11:33:13 [notice] 31#31: gracefully shutting down
+2022/12/14 11:33:13 [notice] 27#27: gracefully shutting down
+2022/12/14 11:33:13 [notice] 29#29: gracefully shutting down
+2022/12/14 11:33:13 [notice] 30#30: gracefully shutting down
+2022/12/14 11:33:13 [notice] 26#26: gracefully shutting down
+2022/12/14 11:33:13 [notice] 22#22: exiting
+2022/12/14 11:33:13 [notice] 20#20: exiting
+2022/12/14 11:33:13 [notice] 25#25: exiting
+2022/12/14 11:33:13 [notice] 28#28: exiting
+2022/12/14 11:33:13 [notice] 21#21: exit
+2022/12/14 11:33:13 [notice] 24#24: exiting
+2022/12/14 11:33:13 [notice] 23#23: exiting
+2022/12/14 11:33:13 [notice] 27#27: exiting
+2022/12/14 11:33:13 [notice] 31#31: exiting
+2022/12/14 11:33:13 [notice] 29#29: exiting
+2022/12/14 11:33:13 [notice] 30#30: exiting
+2022/12/14 11:33:13 [notice] 26#26: exiting
+2022/12/14 11:33:13 [notice] 22#22: exit
+2022/12/14 11:33:13 [notice] 20#20: exit
+2022/12/14 11:33:13 [notice] 25#25: exit
+2022/12/14 11:33:13 [notice] 28#28: exit
+2022/12/14 11:33:13 [notice] 24#24: exit
+2022/12/14 11:33:13 [notice] 23#23: exit
+2022/12/14 11:33:13 [notice] 27#27: exit
+2022/12/14 11:33:13 [notice] 31#31: exit
+2022/12/14 11:33:13 [notice] 29#29: exit
+2022/12/14 11:33:13 [notice] 30#30: exit
+2022/12/14 11:33:13 [notice] 26#26: exit
+2022/12/14 11:33:13 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2022/12/14 11:33:13 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:33:13 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/12/14 11:33:13 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 11:33:13 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/12/14 11:33:13 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/12/14 11:33:13 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 11:33:13 [notice] 1#1: exit
+2022/12/14 15:27:31 [notice] 1#1: using the "epoll" event method
+2022/12/14 15:27:31 [notice] 1#1: nginx/1.23.3
+2022/12/14 15:27:31 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/12/14 15:27:31 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/12/14 15:27:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/12/14 15:27:31 [notice] 1#1: start worker processes
+2022/12/14 15:27:31 [notice] 1#1: start worker process 20
+2022/12/14 15:27:31 [notice] 1#1: start worker process 21
+2022/12/14 15:27:31 [notice] 1#1: start worker process 22
+2022/12/14 15:27:31 [notice] 1#1: start worker process 23
+2022/12/14 15:27:31 [notice] 1#1: start worker process 24
+2022/12/14 15:27:31 [notice] 1#1: start worker process 25
+2022/12/14 15:27:31 [notice] 1#1: start worker process 26
+2022/12/14 15:27:31 [notice] 1#1: start worker process 27
+2022/12/14 15:27:31 [notice] 1#1: start worker process 28
+2022/12/14 15:27:31 [notice] 1#1: start worker process 29
+2022/12/14 15:27:31 [notice] 1#1: start worker process 30
+2022/12/14 15:27:31 [notice] 1#1: start worker process 31
+2022/12/14 15:49:05 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/12/14 15:49:05 [notice] 21#21: gracefully shutting down
+2022/12/14 15:49:05 [notice] 30#30: gracefully shutting down
+2022/12/14 15:49:05 [notice] 25#25: gracefully shutting down
+2022/12/14 15:49:05 [notice] 26#26: gracefully shutting down
+2022/12/14 15:49:05 [notice] 28#28: gracefully shutting down
+2022/12/14 15:49:05 [notice] 26#26: exiting
+2022/12/14 15:49:05 [notice] 31#31: gracefully shutting down
+2022/12/14 15:49:05 [notice] 21#21: exiting
+2022/12/14 15:49:05 [notice] 30#30: exiting
+2022/12/14 15:49:05 [notice] 25#25: exiting
+2022/12/14 15:49:05 [notice] 23#23: gracefully shutting down
+2022/12/14 15:49:05 [notice] 27#27: gracefully shutting down
+2022/12/14 15:49:05 [notice] 22#22: gracefully shutting down
+2022/12/14 15:49:05 [notice] 29#29: gracefully shutting down
+2022/12/14 15:49:05 [notice] 24#24: gracefully shutting down
+2022/12/14 15:49:05 [notice] 20#20: gracefully shutting down
+2022/12/14 15:49:05 [notice] 28#28: exiting
+2022/12/14 15:49:05 [notice] 28#28: exit
+2022/12/14 15:49:05 [notice] 26#26: exit
+2022/12/14 15:49:05 [notice] 31#31: exiting
+2022/12/14 15:49:05 [notice] 21#21: exit
+2022/12/14 15:49:05 [notice] 30#30: exit
+2022/12/14 15:49:05 [notice] 25#25: exit
+2022/12/14 15:49:05 [notice] 23#23: exiting
+2022/12/14 15:49:05 [notice] 23#23: exit
+2022/12/14 15:49:05 [notice] 27#27: exiting
+2022/12/14 15:49:05 [notice] 29#29: exiting
+2022/12/14 15:49:05 [notice] 29#29: exit
+2022/12/14 15:49:05 [notice] 22#22: exiting
+2022/12/14 15:49:05 [notice] 24#24: exiting
+2022/12/14 15:49:05 [notice] 20#20: exiting
+2022/12/14 15:49:05 [notice] 31#31: exit
+2022/12/14 15:49:05 [notice] 27#27: exit
+2022/12/14 15:49:05 [notice] 22#22: exit
+2022/12/14 15:49:05 [notice] 24#24: exit
+2022/12/14 15:49:05 [notice] 20#20: exit
+2022/12/14 15:49:05 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/12/14 15:49:05 [notice] 1#1: worker process 26 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: worker process 28 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: worker process 30 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 15:49:05 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/12/14 15:49:05 [notice] 1#1: worker process 21 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: worker process 23 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: worker process 24 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: worker process 29 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 15:49:05 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/12/14 15:49:05 [notice] 1#1: worker process 20 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: worker process 25 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: worker process 27 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 15:49:05 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2022/12/14 15:49:05 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/12/14 15:49:05 [notice] 1#1: worker process 31 exited with code 0
+2022/12/14 15:49:05 [notice] 1#1: signal 29 (SIGIO) received
+2022/12/14 15:49:06 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2022/12/14 15:49:06 [notice] 1#1: worker process 22 exited with code 0
+2022/12/14 15:49:06 [notice] 1#1: exit

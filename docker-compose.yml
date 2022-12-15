@@ -20,7 +20,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_PASSWORD: databasepassword
+      POSTGRES_PASSWORD: 
       POSTGRES_USER: postgres
       POSTGRES_DB: carshare_v2
       PGDATA: /var/lib/postgresql/data/pgdata
@@ -36,13 +36,13 @@ services:
   nginx:
     image: nginx
     ports:
-      - 81:80
+      - 80:80
       - 443:443
     volumes:
       - ./staticfiles:/home/app/web/staticfiles
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/logs:/var/log/nginx
-      - ./certbot/www:/var/www/certbot/:ro
-      - ./certbot/conf/:/etc/nginx/ssl/:ro
+      # - ./certbot/www:/var/www/certbot/:ro
+      # - ./certbot/conf/:/etc/nginx/ssl/:ro
     depends_on:
       - web
