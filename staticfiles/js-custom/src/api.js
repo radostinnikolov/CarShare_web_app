@@ -1,6 +1,6 @@
 // import { getUserData } from "./utils.js-custom";
 
-const host = 'http://carshare-app.eu/';
+const host = 'http://carshare-app.eu';
 
 async function request(method, url, data){
     const options = {
