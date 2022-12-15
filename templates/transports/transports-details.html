@@ -64,7 +64,7 @@
 
                 {% else %}
                     {% if request.user not in object.requests.all and request.user not in object.passengers.all %}
-                        {% if object.status == 'Active' %}
+                        {% if object.status == 'ACTIVE' %}
                             <form method="post"
                                   action="{% url 'send transport request' transport_id=transport.pk user_id=request.user.pk %}"
                                   style="text-align: center">
