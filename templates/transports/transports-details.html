@@ -172,7 +172,7 @@
                             <form method="post" action="{% url 'chatroom create' transport_id=object.pk %}"
                                   style="text-align: center">
                                 <p><input type="text" name="chatroom_name"></p>
-                                <a class="w3-btn w3-teal">Create</a>
+                                <button class="w3-btn w3-teal">Create</button>
                                 {% csrf_token %}
                             </form>
                         {% else %}
