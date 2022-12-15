@@ -13,11 +13,6 @@ async function request(method, url, data){
         options.body = JSON.stringify(data)
     };
 
-    // const user = getUserData()
-
-    // if (user){
-    //     options.headers['X-Authorization'] = user.accessToken;
-    // }
 
     try {
         const response = await fetch(host + url, options);

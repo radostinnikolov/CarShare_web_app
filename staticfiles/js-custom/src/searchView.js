@@ -1,6 +1,6 @@
 import {html, render, nothing} from "./lib.js";
 import {get} from "./api.js";
-import {createSubmitHandler} from "./utils.js";
+
 
 window.addEventListener("load", (event) => {
     const main = document.getElementById('main')

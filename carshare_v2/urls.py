@@ -16,11 +16,4 @@ urlpatterns = [
     path('chat/', include('carshare_v2.chat.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-#total days - 14 days
-#TODO: fix homepage - est 1 day
-#TODO: implement tranports filter/search(with REST or not?) - est 2 days
-#TODO: implement chat between users / chatroom for every transport - est 2 days
-#TODO: fix UI and UX - est 3-4 days
-#TODO: fix everything to fit requirements and manual test- est 2 days
-#TODO: write tests and error handling and mock presentation- est 2 days
-#TODO: deployment - est 1 day
+
