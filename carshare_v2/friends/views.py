@@ -55,8 +55,8 @@ class FriendRequestAccept(LoginRequiredMixin, CreateView):
             instance = form.save(commit=False)
             instance.requester_id = self.kwargs['requester_id']
             instance.receiver_id = self.kwargs['receiver_id']
-            instance.save()
             self.remove_the_request(self.kwargs['requester_id'], self.kwargs['receiver_id'])
+            instance.save()
             return redirect(reverse_lazy('index'))
 
 @login_required
@@ -67,6 +67,7 @@ def delete_friendship(request, deleter_id, deleted_id):
         except:
             friendship = Friend.objects.filter(requester_id=deleted_id, receiver_id=deleter_id).get()
         friendship.delete()
+        friendship.save()
         return redirect(reverse_lazy('profile details', kwargs={
             'pk': deleter_id
         }))

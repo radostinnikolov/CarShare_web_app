@@ -70,6 +70,7 @@ def send_transport_request(request, transport_id, user_id):
     current_user = UserModel.objects.filter(pk=user_id).get()
     if request.method == 'POST':
         current_transport.requests.add(current_user)
+        current_transport.save()
         return redirect(reverse_lazy('transports details', kwargs={
             'pk': transport_id
         }))
@@ -80,6 +81,7 @@ def remove_passenger_from_transport(request, transport_id, user_id):
     current_user = UserModel.objects.filter(pk=user_id).get()
     if request.method == 'POST':
         current_transport.passengers.remove(current_user)
+        current_transport.save()
         return redirect(reverse_lazy('transports details', kwargs={
             'pk': transport_id
         }))
@@ -91,6 +93,7 @@ def accept_passenger_request(request, transport_id, user_id):
     if request.method == 'POST':
         current_transport.passengers.add(current_user)
         current_transport.requests.remove(current_user)
+        current_transport.save()
         return redirect(reverse_lazy('transports details', kwargs={
             'pk': transport_id
         }))
@@ -101,6 +104,7 @@ def reject_passenger_request(request, transport_id, user_id):
     current_user = UserModel.objects.filter(pk=user_id).get()
     if request.method == 'POST':
         current_transport.requests.remove(current_user)
+        current_transport.save()
         return redirect(reverse_lazy('transports details', kwargs={
             'pk': transport_id
         }))

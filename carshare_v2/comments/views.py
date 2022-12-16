@@ -16,7 +16,8 @@ def create_new_comment(request, commenter_id, commented_id):
 @login_required
 def delete_comment(request, commenter_id, commented_id):
     if request.method == 'POST':
-        Comment.objects.filter(from_profile_id=commenter_id, to_profile_id=commented_id).get().delete()
+        comment = Comment.objects.filter(from_profile_id=commenter_id, to_profile_id=commented_id).get()
+        comment.delete()
         return redirect(reverse_lazy('profile details', kwargs={
             'pk': commented_id
         }))
