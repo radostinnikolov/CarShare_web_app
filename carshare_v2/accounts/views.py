@@ -18,8 +18,6 @@ class ProfileDetailsView(UserUtilsMixin, LoginRequiredMixin, generic.DetailView)
     model = UserModel
 
 
-
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['has_sent_friend_request'] = self.request.user.pk in self.get_requesters_ids(self.object.pk)

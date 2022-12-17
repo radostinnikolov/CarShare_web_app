@@ -310,7 +310,9 @@
                                                         <tr>
                                                             <td>
                                                                 <a href="{% url 'transports details' pk=transport.pk %}">Transport
-                                                                    on {{ transport.date }} from {{ transport.from_city }} to {{ transport.to_city }}</a></td>
+                                                                    on {{ transport.date }}
+                                                                    from {{ transport.from_city }}
+                                                                    to {{ transport.to_city }}</a></td>
                                                         </tr>
                                                     {% endfor %}
                                                     </tbody>
@@ -345,18 +347,22 @@
                                     <div>Delete Profile</div>
                                     <i class="icon-line-delete"></i></a>
                             {% else %}
-                                {% if not has_sent_friend_request %}
-                                    <div class="w3-section">
-                                        <form method="post"
-                                              action="{% url 'friend request send' requester_id=request.user.pk receiver_id=object.pk %}">
-                                            <button class="list-group-item list-group-item-action d-flex justify-content-between">
-                                                Send friend request
-                                                <i class="icon-user-friends"></i></button>
-                                            {% csrf_token %}
-                                        </form>
-                                    </div>
+                                {% if not is_friend %}
+                                    {% if not has_sent_friend_request %}
+                                        <div class="w3-section">
+                                            <form method="post"
+                                                  action="{% url 'friend request send' requester_id=request.user.pk receiver_id=object.pk %}">
+                                                <button class="list-group-item list-group-item-action d-flex justify-content-between">
+                                                    Send friend request
+                                                    <i class="icon-user-friends"></i></button>
+                                                {% csrf_token %}
+                                            </form>
+                                        </div>
+                                    {% else %}
+                                        <p>You have sent a friend request!</p>
+                                    {% endif %}
                                 {% else %}
-                                    <p>You have sent a friend request!</p>
+                                    <p>You are friends!</p>
                                 {% endif %}
 
                             {% endif %}
