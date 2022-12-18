@@ -1,5 +1,4 @@
 from django.contrib.auth import views as auth_views, login, get_user_model
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 
 from django.urls import reverse_lazy

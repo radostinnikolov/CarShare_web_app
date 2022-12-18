@@ -30,6 +30,11 @@ class Statuses(ChoicesEnum):
 
 
 class Transport(models.Model):
+    MAX_LEN_DESCR = 300
+    MAX_LEN_STATUS = 20
+    MIN_VALUE_SEATS = 1
+    MAX_VALUE_SEATS = 6
+    MAX_LEN_CHATROOM = 20
     from_city = models.ForeignKey(
         City,
         on_delete=models.CASCADE,
@@ -79,13 +84,13 @@ class Transport(models.Model):
         blank=True
     )
     description = models.CharField(
-        max_length=300,
+        max_length=MAX_LEN_DESCR,
         null=True,
         blank=True
     )
 
     status = models.CharField(
-        max_length=20,
+        max_length=MAX_LEN_STATUS,
         choices=Statuses.choices(),
         default='ACTIVE',
         null=False,
@@ -93,14 +98,14 @@ class Transport(models.Model):
     )
     total_seats = models.IntegerField(
         validators=(
-            MinValueValidator(1),
-            MaxValueValidator(6)
+            MinValueValidator(MIN_VALUE_SEATS),
+            MaxValueValidator(MAX_VALUE_SEATS)
         ),
         null=False,
         blank=False
     )
     chatroom_name = models.CharField(
-        max_length=20,
+        max_length=MAX_LEN_CHATROOM,
         null=True,
         blank=True
     )
