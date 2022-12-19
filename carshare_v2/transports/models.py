@@ -10,7 +10,8 @@ from django.db.models.signals import post_save
 
 from carshare_v2.common.models import City
 from carshare_v2.transports.signals import clear_cache
-from carshare_v2.transports.validators import validate_date_is_not_in_the_past
+from carshare_v2.transports.validators import validate_date_is_not_in_the_past, \
+    validate_chatroom_name_contains_only_letters_or_digits
 
 UserModel = get_user_model()
 
@@ -105,6 +106,7 @@ class Transport(models.Model):
         blank=False
     )
     chatroom_name = models.CharField(
+        validators=(validate_chatroom_name_contains_only_letters_or_digits,),
         max_length=MAX_LEN_CHATROOM,
         null=True,
         blank=True
